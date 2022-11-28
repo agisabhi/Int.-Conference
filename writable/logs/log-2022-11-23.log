@@ -1,0 +1,123 @@
+CRITICAL - 2022-11-23 02:56:26 --> Undefined property: App\Controllers\Admin::$sertifikatModel
+in APPPATH\Controllers\Admin.php on line 463.
+ 1 APPPATH\Controllers\Admin.php(463): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Admin::$sertifikatModel', 'APPPATH\\Controllers\\Admin.php', 463)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->sertifikat()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-23 02:56:52 --> Undefined property: App\Controllers\Admin::$sertifikatModel
+in APPPATH\Controllers\Admin.php on line 463.
+ 1 APPPATH\Controllers\Admin.php(463): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Admin::$sertifikatModel', 'APPPATH\\Controllers\\Admin.php', 463)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->sertifikat()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-23 19:35:41 --> Undefined property: App\Controllers\Admin::$sertifikatModel
+in APPPATH\Controllers\Admin.php on line 463.
+ 1 APPPATH\Controllers\Admin.php(463): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Admin::$sertifikatModel', 'APPPATH\\Controllers\\Admin.php', 463)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->sertifikat()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-23 19:39:42 --> Undefined array key "status_kehadiran"
+in APPPATH\Views\admin\sertifikat.php on line 59.
+ 1 APPPATH\Views\admin\sertifikat.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status_kehadiran"', 'APPPATH\\Views\\admin\\sertifikat.php', 59)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\sertifikat.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/sertifikat', [], true)
+ 5 APPPATH\Controllers\Admin.php(470): view('admin/sertifikat', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->sertifikat()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-23 19:41:06 --> Undefined array key "poster"
+in APPPATH\Views\admin\sertifikat.php on line 78.
+ 1 APPPATH\Views\admin\sertifikat.php(78): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "poster"', 'APPPATH\\Views\\admin\\sertifikat.php', 78)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\sertifikat.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/sertifikat', [], true)
+ 5 APPPATH\Controllers\Admin.php(470): view('admin/sertifikat', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->sertifikat()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-23 19:41:08 --> Undefined array key "poster"
+in APPPATH\Views\admin\sertifikat.php on line 78.
+ 1 APPPATH\Views\admin\sertifikat.php(78): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "poster"', 'APPPATH\\Views\\admin\\sertifikat.php', 78)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\sertifikat.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/sertifikat', [], true)
+ 5 APPPATH\Controllers\Admin.php(470): view('admin/sertifikat', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->sertifikat()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-23 19:41:58 --> Undefined array key "submit_poster"
+in APPPATH\Views\admin\sertifikat.php on line 81.
+ 1 APPPATH\Views\admin\sertifikat.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "submit_poster"', 'APPPATH\\Views\\admin\\sertifikat.php', 81)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\sertifikat.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/sertifikat', [], true)
+ 5 APPPATH\Controllers\Admin.php(470): view('admin/sertifikat', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->sertifikat()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-23 19:42:08 --> Undefined variable $namaadmin
+in APPPATH\Views\layout\templateadmin.php on line 88.
+ 1 APPPATH\Views\layout\templateadmin.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $namaadmin', 'APPPATH\\Views\\layout\\templateadmin.php', 88)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\templateadmin.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layout/templateadmin', [], true)
+ 5 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/sertifikat', [], true)
+ 6 APPPATH\Controllers\Admin.php(470): view('admin/sertifikat', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->sertifikat()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-23 20:47:12 --> syntax error, unexpected single-quoted string "); background-size:190mm 236mm..."
+in APPPATH\Controllers\Admin.php on line 495.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('admin/sertifikat')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('admin/sertifikat')
+ 3 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('admin/sertifikat')
+ 4 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-23 21:04:32 --> Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH\Debug\Exceptions.php on line 154.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-11-23 21:05:45 --> Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH\Debug\Exceptions.php on line 154.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-11-23 21:06:46 --> Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH\Debug\Exceptions.php on line 154.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-11-23 21:07:59 --> Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH\Debug\Exceptions.php on line 154.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-11-23 21:09:41 --> Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH\Debug\Exceptions.php on line 154.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-11-23 21:17:30 --> Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH\Debug\Exceptions.php on line 154.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-11-23 21:26:17 --> Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH\Debug\Exceptions.php on line 154.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-11-23 21:41:23 --> Call to undefined method Mpdf\Mpdf::watermarkImgBehind()
+in VENDORPATH\mpdf\mpdf\src\Strict.php on line 15.
+ 1 APPPATH\Controllers\Admin.php(500): Mpdf\Mpdf->__call('watermarkImgBehind', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->download_sertifikat('ABS-1')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

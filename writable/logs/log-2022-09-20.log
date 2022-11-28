@@ -1,0 +1,32 @@
+CRITICAL - 2022-09-20 22:22:01 --> Undefined variable $page
+in APPPATH\Views\reviewer\full_paper.php on line 132.
+ 1 APPPATH\Views\reviewer\full_paper.php(132): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $page', 'APPPATH\\Views\\reviewer\\full_paper.php', 132)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\reviewer\\full_paper.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('reviewer/full_paper', [], true)
+ 5 APPPATH\Controllers\Reviewer.php(74): view('reviewer/full_paper', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Reviewer->full_paper()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reviewer))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-20 23:17:54 --> Undefined property: App\Controllers\Reviewer::$reviewModel
+in APPPATH\Controllers\Reviewer.php on line 99.
+ 1 APPPATH\Controllers\Reviewer.php(99): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Reviewer::$reviewModel', 'APPPATH\\Controllers\\Reviewer.php', 99)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Reviewer->prosesUpload()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reviewer))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-20 23:31:46 --> Undefined variable $pag
+in APPPATH\Views\reviewer\full_paper.php on line 127.
+ 1 APPPATH\Views\reviewer\full_paper.php(127): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pag', 'APPPATH\\Views\\reviewer\\full_paper.php', 127)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\reviewer\\full_paper.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('reviewer/full_paper', [], true)
+ 5 APPPATH\Controllers\Reviewer.php(75): view('reviewer/full_paper', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Reviewer->full_paper()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reviewer))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

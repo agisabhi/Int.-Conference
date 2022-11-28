@@ -1,0 +1,127 @@
+CRITICAL - 2022-09-29 00:01:57 --> Undefined variable $sc
+in APPPATH\Views\admin\schedule.php on line 67.
+ 1 APPPATH\Views\admin\schedule.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $sc', 'APPPATH\\Views\\admin\\schedule.php', 67)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\schedule.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/schedule', [], true)
+ 5 APPPATH\Controllers\Admin.php(465): view('admin/schedule', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->schedule()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-29 00:02:07 --> Undefined variable $scedule
+in APPPATH\Views\admin\schedule.php on line 67.
+ 1 APPPATH\Views\admin\schedule.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $scedule', 'APPPATH\\Views\\admin\\schedule.php', 67)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\schedule.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/schedule', [], true)
+ 5 APPPATH\Controllers\Admin.php(465): view('admin/schedule', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->schedule()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-29 00:10:22 --> Undefined variable $akhir_ull
+in APPPATH\Controllers\Admin.php on line 498.
+ 1 APPPATH\Controllers\Admin.php(498): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $akhir_ull', 'APPPATH\\Controllers\\Admin.php', 498)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->updateScheduleFull()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-29 20:36:43 --> Undefined variable $abs_id
+in APPPATH\Views\admin\email.php on line 21.
+ 1 APPPATH\Views\admin\email.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $abs_id', 'APPPATH\\Views\\admin\\email.php', 21)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\email.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/email', [], true)
+ 5 APPPATH\Controllers\Admin.php(707): view('admin/email', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->Email()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-29 20:48:27 --> Undefined variable $email
+in APPPATH\Controllers\Admin.php on line 725.
+ 1 APPPATH\Controllers\Admin.php(725): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $email', 'APPPATH\\Controllers\\Admin.php', 725)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->prosesEmail()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-09-29 20:49:19 --> mysqli_sql_exception: Column 'status' in where clause is ambiguous in C:\xampp\htdocs\isceeradmin\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\isceeradmin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `abstrak...', 0)
+#1 C:\xampp\htdocs\isceeradmin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `abstrak...')
+#2 C:\xampp\htdocs\isceeradmin\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `abstrak...')
+#3 C:\xampp\htdocs\isceeradmin\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `abstrak...', Array, false)
+#4 C:\xampp\htdocs\isceeradmin\system\Model.php(771): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\isceeradmin\app\Models\AbstrakModel.php(99): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\isceeradmin\app\Controllers\Admin.php(717): App\Models\AbstrakModel->email_acc()
+#7 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(904): App\Controllers\Admin->prosesEmail()
+#8 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#9 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\isceeradmin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\isceeradmin\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2022-09-29 20:49:19 --> Column 'status' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `abstrak`.`abs_id`, `abstrak`.`id_user`, `email`
+FROM `abstrak`
+JOIN `user` ON `user`.`id_user`=`abstrak`.`id_user`
+WHERE `status` = \'accepted\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `abstrak`.`abs_id`, `abstrak`.`id_user`, `email`
+FROM `abstrak`
+JOIN `user` ON `user`.`id_user`=`abstrak`.`id_user`
+WHERE `status` = \'accepted\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `abstrak`.`abs_id`, `abstrak`.`id_user`, `email`
+FROM `abstrak`
+JOIN `user` ON `user`.`id_user`=`abstrak`.`id_user`
+WHERE `status` = \'accepted\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `abstrak`.`abs_id`, `abstrak`.`id_user`, `email`
+FROM `abstrak`
+JOIN `user` ON `user`.`id_user`=`abstrak`.`id_user`
+WHERE `status` = :status:', [...], false)
+ 5 SYSTEMPATH\Model.php(771): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Models\AbstrakModel.php(99): CodeIgniter\Model->__call('get', [])
+ 7 APPPATH\Controllers\Admin.php(717): App\Models\AbstrakModel->email_acc()
+ 8 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->prosesEmail()
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-29 20:49:39 --> Undefined property: App\Controllers\Admin::$email
+in APPPATH\Controllers\Admin.php on line 732.
+ 1 APPPATH\Controllers\Admin.php(732): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Admin::$email', 'APPPATH\\Controllers\\Admin.php', 732)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->prosesEmail()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-29 20:50:55 --> preg_match(): Argument #2 ($subject) must be of type string, array given
+in SYSTEMPATH\Email\Email.php on line 954.
+ 1 SYSTEMPATH\Email\Email.php(954): preg_match('/\\<(.*)\\>/', [...], null)
+ 2 SYSTEMPATH\Email\Email.php(542): CodeIgniter\Email\Email->cleanEmail([...])
+ 3 APPPATH\Controllers\Admin.php(735): CodeIgniter\Email\Email->setTo([...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->prosesEmail()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-29 21:31:42 --> Undefined variable $email
+in APPPATH\Controllers\Admin.php on line 729.
+ 1 APPPATH\Controllers\Admin.php(729): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $email', 'APPPATH\\Controllers\\Admin.php', 729)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->prosesEmail()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-29 21:46:10 --> Call to undefined method App\Models\RevisedModel::email_acc
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\Admin.php(727): CodeIgniter\Model->__call('email_acc', [])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->prosesEmail()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

@@ -1,0 +1,279 @@
+CRITICAL - 2022-09-27 20:30:34 --> Undefined property: App\Controllers\Admin::$load
+in APPPATH\Controllers\Admin.php on line 348.
+ 1 APPPATH\Controllers\Admin.php(348): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Admin::$load', 'APPPATH\\Controllers\\Admin.php', 348)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->DownloadAllRevised()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-27 20:32:24 --> Call to undefined method App\Models\RevisedModel::getResultArray
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\Admin.php(354): CodeIgniter\Model->__call('getResultArray', [])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->DownloadAllRevised()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-27 20:32:38 --> Call to undefined method ZipArchive::read_file()
+in APPPATH\Controllers\Admin.php on line 357.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->DownloadAllRevised()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-27 20:37:56 --> Call to undefined method ZipArchive::add_data()
+in APPPATH\Controllers\Admin.php on line 357.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->DownloadAllRevised()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-27 21:37:17 --> Call to undefined method ZipArchive::add_data()
+in APPPATH\Controllers\Admin.php on line 359.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->DownloadAllRevised()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-09-27 21:37:29 --> mysqli_sql_exception: Unknown column 'scope.abs_id' in 'on clause' in C:\xampp\htdocs\isceeradmin\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\isceeradmin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\isceeradmin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\isceeradmin\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\isceeradmin\system\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\isceeradmin\system\Model.php(550): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\isceeradmin\system\BaseModel.php(1085): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\isceeradmin\app\Controllers\Admin.php(70): CodeIgniter\BaseModel->paginate(10, 'abstrak')
+#7 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(904): App\Controllers\Admin->abstrak()
+#8 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#9 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\isceeradmin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\isceeradmin\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2022-09-27 21:37:29 --> Unknown column 'scope.abs_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `abstrak`
+JOIN `scope` ON `scope`.`abs_id`=`abstrak`.`abs_id`
+WHERE YEAR(`submit_date`) = \'2022\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `abstrak`
+JOIN `scope` ON `scope`.`abs_id`=`abstrak`.`abs_id`
+WHERE YEAR(`submit_date`) = \'2022\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `abstrak`
+JOIN `scope` ON `scope`.`abs_id`=`abstrak`.`abs_id`
+WHERE YEAR(`submit_date`) = \'2022\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `abstrak`
+JOIN `scope` ON `scope`.`abs_id`=`abstrak`.`abs_id`
+WHERE YEAR(`submit_date`) = :YEAR(`submit_date`):', [...], false)
+ 5 SYSTEMPATH\Model.php(550): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1085): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Controllers\Admin.php(70): CodeIgniter\BaseModel->paginate(10, 'abstrak')
+ 8 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->abstrak()
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-27 21:37:59 --> Undefined array key "status"
+in APPPATH\Views\admin\abstrak.php on line 68.
+ 1 APPPATH\Views\admin\abstrak.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status"', 'APPPATH\\Views\\admin\\abstrak.php', 68)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\abstrak.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/abstrak', [], true)
+ 5 APPPATH\Controllers\Admin.php(96): view('admin/abstrak', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->abstrak()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-27 21:40:06 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Admin.php on line 388.
+ 1 APPPATH\Controllers\Admin.php(388): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Admin.php', 388)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->DownloadMetadata()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-27 22:14:54 --> Call to undefined method ZipArchive::add_data()
+in APPPATH\Controllers\Admin.php on line 359.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->DownloadAllRevised()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-27 22:22:10 --> Call to undefined method ZipArchive::add_data()
+in APPPATH\Controllers\Admin.php on line 359.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->DownloadAllRevised()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-27 22:25:05 --> Call to undefined method ZipArchive::download()
+in APPPATH\Controllers\Admin.php on line 362.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->DownloadAllRevised()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-27 22:29:18 --> Cannot use [] for reading
+in APPPATH\Controllers\Admin.php on line 361.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->DownloadAllRevised()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-27 22:29:39 --> ZipArchive::addFile(): Argument #1 ($filepath) must be of type string, array given
+in APPPATH\Controllers\Admin.php on line 361.
+ 1 APPPATH\Controllers\Admin.php(361): ZipArchive->addFile([...], [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->DownloadAllRevised()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-27 22:30:05 --> ZipArchive::addFile(): Argument #1 ($filepath) must be of type string, array given
+in APPPATH\Controllers\Admin.php on line 361.
+ 1 APPPATH\Controllers\Admin.php(361): ZipArchive->addFile([...], [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->DownloadAllRevised()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-27 22:30:43 --> ZipArchive::addFile(): Argument #1 ($filepath) must be of type string, array given
+in APPPATH\Controllers\Admin.php on line 361.
+ 1 APPPATH\Controllers\Admin.php(361): ZipArchive->addFile([...], [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->DownloadAllRevised()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-27 22:30:56 --> ZipArchive::addFile(): No such file or directory
+in APPPATH\Controllers\Admin.php on line 361.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ZipArchive::addFile(): No such file or directory', 'APPPATH\\Controllers\\Admin.php', 361)
+ 2 APPPATH\Controllers\Admin.php(361): ZipArchive->addFile('RP_ABS-1_1663736884_0dc6a3779bda57551f97.doc', 'RP_ABS-1_1663736884_0dc6a3779bda57551f97.doc')
+ 3 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->DownloadAllRevised()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-27 22:31:07 --> ZipArchive::addFile(): No such file or directory
+in APPPATH\Controllers\Admin.php on line 361.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ZipArchive::addFile(): No such file or directory', 'APPPATH\\Controllers\\Admin.php', 361)
+ 2 APPPATH\Controllers\Admin.php(361): ZipArchive->addFile('/revisedpaper/RP_ABS-1_1663736884_0dc6a3779bda57551f97.doc', '/revisedpaper/RP_ABS-1_1663736884_0dc6a3779bda57551f97.doc')
+ 3 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->DownloadAllRevised()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-27 22:42:13 --> Too few arguments to function App\Models\RevisedModel::DownloadRevised(), 0 passed in C:\xampp\htdocs\isceeradmin\app\Controllers\Admin.php on line 356 and exactly 1 expected
+in APPPATH\Models\RevisedModel.php on line 328.
+ 1 APPPATH\Controllers\Admin.php(356): App\Models\RevisedModel->DownloadRevised()
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->DownloadAllRevised()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-27 22:46:51 --> filesize(): stat failed for RevisedPaper.zip
+in APPPATH\Controllers\Admin.php on line 370.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'filesize(): stat failed for RevisedPaper.zip', 'APPPATH\\Controllers\\Admin.php', 370)
+ 2 APPPATH\Controllers\Admin.php(370): filesize('RevisedPaper.zip')
+ 3 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->DownloadAllRevised()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-27 22:46:52 --> filesize(): stat failed for RevisedPaper.zip
+in APPPATH\Controllers\Admin.php on line 370.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'filesize(): stat failed for RevisedPaper.zip', 'APPPATH\\Controllers\\Admin.php', 370)
+ 2 APPPATH\Controllers\Admin.php(370): filesize('RevisedPaper.zip')
+ 3 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->DownloadAllRevised()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-27 22:46:56 --> filesize(): stat failed for RevisedPaper.zip
+in APPPATH\Controllers\Admin.php on line 370.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'filesize(): stat failed for RevisedPaper.zip', 'APPPATH\\Controllers\\Admin.php', 370)
+ 2 APPPATH\Controllers\Admin.php(370): filesize('RevisedPaper.zip')
+ 3 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->DownloadAllRevised()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-27 22:46:58 --> filesize(): stat failed for RevisedPaper.zip
+in APPPATH\Controllers\Admin.php on line 370.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'filesize(): stat failed for RevisedPaper.zip', 'APPPATH\\Controllers\\Admin.php', 370)
+ 2 APPPATH\Controllers\Admin.php(370): filesize('RevisedPaper.zip')
+ 3 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->DownloadAllRevised()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-27 22:47:03 --> filesize(): stat failed for RevisedPaper.zip
+in APPPATH\Controllers\Admin.php on line 370.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'filesize(): stat failed for RevisedPaper.zip', 'APPPATH\\Controllers\\Admin.php', 370)
+ 2 APPPATH\Controllers\Admin.php(370): filesize('RevisedPaper.zip')
+ 3 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->DownloadAllRevised()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-27 22:47:16 --> filesize(): stat failed for RevisedPaper.zip
+in APPPATH\Controllers\Admin.php on line 370.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'filesize(): stat failed for RevisedPaper.zip', 'APPPATH\\Controllers\\Admin.php', 370)
+ 2 APPPATH\Controllers\Admin.php(370): filesize('RevisedPaper.zip')
+ 3 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->DownloadAllRevised()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-27 22:47:17 --> filesize(): stat failed for RevisedPaper.zip
+in APPPATH\Controllers\Admin.php on line 370.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'filesize(): stat failed for RevisedPaper.zip', 'APPPATH\\Controllers\\Admin.php', 370)
+ 2 APPPATH\Controllers\Admin.php(370): filesize('RevisedPaper.zip')
+ 3 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->DownloadAllRevised()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-27 22:47:23 --> filesize(): stat failed for RevisedPaper.zip
+in APPPATH\Controllers\Admin.php on line 370.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'filesize(): stat failed for RevisedPaper.zip', 'APPPATH\\Controllers\\Admin.php', 370)
+ 2 APPPATH\Controllers\Admin.php(370): filesize('RevisedPaper.zip')
+ 3 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->DownloadAllRevised()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-27 22:55:40 --> Call to undefined method App\Models\RevisedModel::getResult
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\Admin.php(357): CodeIgniter\Model->__call('getResult', [])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->DownloadAllRevised()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-27 23:22:14 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\Admin.php on line 361.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->DownloadAllRevised()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-27 23:23:11 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\Admin.php on line 361.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->DownloadAllRevised()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-27 23:27:33 --> ZipArchive::addFile(): No such file or directory
+in APPPATH\Controllers\Admin.php on line 362.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ZipArchive::addFile(): No such file or directory', 'APPPATH\\Controllers\\Admin.php', 362)
+ 2 APPPATH\Controllers\Admin.php(362): ZipArchive->addFile('revisedpaper/Review_ABS-1_1663733905_3d3410cb3d4aa3eccab3.doc')
+ 3 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->DownloadAllRevised()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

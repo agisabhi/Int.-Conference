@@ -1,0 +1,243 @@
+ERROR - 2022-09-28 01:40:37 --> mysqli_sql_exception: Unknown column 'updated_payment' in 'field list' in C:\xampp\htdocs\isceeradmin\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\isceeradmin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `transfe...', 0)
+#1 C:\xampp\htdocs\isceeradmin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `transfe...')
+#2 C:\xampp\htdocs\isceeradmin\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `transfe...')
+#3 C:\xampp\htdocs\isceeradmin\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `transfe...', Array, false)
+#4 C:\xampp\htdocs\isceeradmin\system\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\isceeradmin\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(10, 0)
+#6 C:\xampp\htdocs\isceeradmin\system\BaseModel.php(1089): CodeIgniter\BaseModel->findAll(10, 0)
+#7 C:\xampp\htdocs\isceeradmin\app\Controllers\Admin.php(428): CodeIgniter\BaseModel->paginate(10, 'payment')
+#8 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(904): App\Controllers\Admin->payment()
+#9 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\isceeradmin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\isceeradmin\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2022-09-28 01:40:37 --> Unknown column 'updated_payment' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `transfer_date`, `payment_proof`, `transfer_time`, `bank_name`, `account_name`, `account_number`, `amount`, `payment`.`abs_id`, `payment_status`, `created_payment`, `updated_payment`
+FROM `payment`
+JOIN `abstrak` ON `abstrak`.`abs_id`=`payment`.`abs_id`
+WHERE YEAR(`created_payment`) = \'2022\'
+ LIMIT 10', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `transfer_date`, `payment_proof`, `transfer_time`, `bank_name`, `account_name`, `account_number`, `amount`, `payment`.`abs_id`, `payment_status`, `created_payment`, `updated_payment`
+FROM `payment`
+JOIN `abstrak` ON `abstrak`.`abs_id`=`payment`.`abs_id`
+WHERE YEAR(`created_payment`) = \'2022\'
+ LIMIT 10')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `transfer_date`, `payment_proof`, `transfer_time`, `bank_name`, `account_name`, `account_number`, `amount`, `payment`.`abs_id`, `payment_status`, `created_payment`, `updated_payment`
+FROM `payment`
+JOIN `abstrak` ON `abstrak`.`abs_id`=`payment`.`abs_id`
+WHERE YEAR(`created_payment`) = \'2022\'
+ LIMIT 10')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `transfer_date`, `payment_proof`, `transfer_time`, `bank_name`, `account_name`, `account_number`, `amount`, `payment`.`abs_id`, `payment_status`, `created_payment`, `updated_payment`
+FROM `payment`
+JOIN `abstrak` ON `abstrak`.`abs_id`=`payment`.`abs_id`
+WHERE YEAR(`created_payment`) = :YEAR(`created_payment`):
+ LIMIT 10', [...], false)
+ 5 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(10, 0)
+ 7 SYSTEMPATH\BaseModel.php(1089): CodeIgniter\BaseModel->findAll(10, 0)
+ 8 APPPATH\Controllers\Admin.php(428): CodeIgniter\BaseModel->paginate(10, 'FCPATH\\payment')
+ 9 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->payment()
+10 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 02:30:32 --> syntax error, unexpected string content "", expecting "-" or identifier or variable or number
+in APPPATH\Views\admin\payment.php on line 46.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/payment', [], true)
+ 3 APPPATH\Controllers\Admin.php(435): view('admin/payment', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->payment()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 21:39:05 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1577.
+ 1 SYSTEMPATH\BaseModel.php(1577): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(692): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\Admin.php(499): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->updateSchedule()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 21:42:51 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1577.
+ 1 SYSTEMPATH\BaseModel.php(1577): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(692): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\Admin.php(477): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->updateScheduleAbstrak()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 21:56:58 --> date_format(): Argument #1 ($object) must be of type DateTimeInterface, null given
+in APPPATH\Controllers\Admin.php on line 472.
+ 1 APPPATH\Controllers\Admin.php(472): date_format(null, 'Y-m-d H:i:s')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->updateScheduleAbstrak()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 21:58:09 --> date_format(): Argument #1 ($object) must be of type DateTimeInterface, null given
+in APPPATH\Controllers\Admin.php on line 472.
+ 1 APPPATH\Controllers\Admin.php(472): date_format(null, 'Y-m-d H:i')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->updateScheduleAbstrak()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 22:00:20 --> DateTime::format() expects exactly 1 argument, 2 given
+in APPPATH\Controllers\Admin.php on line 476.
+ 1 APPPATH\Controllers\Admin.php(476): DateTime->format(null, 'Y-m-d H:i')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->updateScheduleAbstrak()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 22:32:25 --> date(): Argument #2 ($timestamp) must be of type ?int, string given
+in APPPATH\Controllers\Admin.php on line 458.
+ 1 APPPATH\Controllers\Admin.php(458): date('Y-m-d H:i:s', '17-08-2022CDT20:00:15')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->schedule()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 22:32:59 --> date(): Argument #2 ($timestamp) must be of type ?int, string given
+in APPPATH\Controllers\Admin.php on line 458.
+ 1 APPPATH\Controllers\Admin.php(458): date('Y-m-d H:i:s', '17-08-2022 20:00:15')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->schedule()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 22:33:45 --> date(): Argument #2 ($timestamp) must be of type ?int, DateTime given
+in APPPATH\Controllers\Admin.php on line 458.
+ 1 APPPATH\Controllers\Admin.php(458): date('Y-m-d H:i:s', Object(DateTime))
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->schedule()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 22:34:02 --> DateTime::format() expects exactly 1 argument, 2 given
+in APPPATH\Controllers\Admin.php on line 458.
+ 1 APPPATH\Controllers\Admin.php(458): DateTime->format('Y-m-d H:i:s', Object(DateTime))
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->schedule()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 22:39:05 --> syntax error, unexpected token ")", expecting identifier or variable or "{" or "$"
+in APPPATH\Controllers\Admin.php on line 480.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('admin/updateScheduleAbstrak')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('admin/updateScheduleAbstrak')
+ 3 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('admin/updateScheduleAbstrak')
+ 4 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 22:40:33 --> Undefined variable $akhir_abstra
+in APPPATH\Controllers\Admin.php on line 480.
+ 1 APPPATH\Controllers\Admin.php(480): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $akhir_abstra', 'APPPATH\\Controllers\\Admin.php', 480)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->updateScheduleAbstrak()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 22:43:54 --> date_format(): Argument #1 ($object) must be of type DateTimeInterface, null given
+in APPPATH\Controllers\Admin.php on line 480.
+ 1 APPPATH\Controllers\Admin.php(480): date_format(null, 'Y-m-d H:i')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->updateScheduleAbstrak()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 22:45:49 --> date(): Argument #2 ($timestamp) must be of type ?int, DateTime given
+in APPPATH\Controllers\Admin.php on line 479.
+ 1 APPPATH\Controllers\Admin.php(479): date('Y-m-d H:i:s', Object(DateTime))
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->updateScheduleAbstrak()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 22:54:56 --> Call to a member function format() on null
+in APPPATH\Controllers\Admin.php on line 484.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->updateScheduleAbstrak()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 22:58:20 --> Call to undefined method App\Models\ScheduleModel::getRowArray
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\Admin.php(456): CodeIgniter\Model->__call('getRowArray', [])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->schedule()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 22:58:29 --> Undefined variable $a
+in APPPATH\Views\admin\schedule.php on line 46.
+ 1 APPPATH\Views\admin\schedule.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $a', 'APPPATH\\Views\\admin\\schedule.php', 46)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\schedule.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/schedule', [], true)
+ 5 APPPATH\Controllers\Admin.php(465): view('admin/schedule', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->schedule()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 23:00:46 --> date(): Argument #2 ($timestamp) must be of type ?int, string given
+in APPPATH\Views\admin\schedule.php on line 46.
+ 1 APPPATH\Views\admin\schedule.php(46): date('Y-m-d H:i:s', '2022-09-30 10:56:00')
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\schedule.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/schedule', [], true)
+ 5 APPPATH\Controllers\Admin.php(465): view('admin/schedule', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->schedule()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 23:01:03 --> date_format(): Argument #1 ($object) must be of type DateTimeInterface, string given
+in APPPATH\Views\admin\schedule.php on line 46.
+ 1 APPPATH\Views\admin\schedule.php(46): date_format('Y-m-d H:i:s', '2022-09-30 10:56:00')
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\schedule.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/schedule', [], true)
+ 5 APPPATH\Controllers\Admin.php(465): view('admin/schedule', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->schedule()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 23:03:45 --> date_format(): Argument #1 ($object) must be of type DateTimeInterface, string given
+in APPPATH\Views\admin\schedule.php on line 46.
+ 1 APPPATH\Views\admin\schedule.php(46): date_format('2022-09-30 10:56:00', 'Y-m-d H:i:s')
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\schedule.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/schedule', [], true)
+ 5 APPPATH\Controllers\Admin.php(465): view('admin/schedule', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->schedule()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 23:59:57 --> Undefined variable $sc
+in APPPATH\Views\admin\schedule.php on line 67.
+ 1 APPPATH\Views\admin\schedule.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $sc', 'APPPATH\\Views\\admin\\schedule.php', 67)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\schedule.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/schedule', [], true)
+ 5 APPPATH\Controllers\Admin.php(465): view('admin/schedule', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->schedule()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

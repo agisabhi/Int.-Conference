@@ -1,0 +1,155 @@
+CRITICAL - 2022-09-16 20:00:06 --> Invalid file: reviewer/full_paper.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('reviewer/full_paper.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('reviewer/full_paper', [], true)
+ 3 APPPATH\Controllers\Reviewer.php(55): view('reviewer/full_paper', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Reviewer->full_paper()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reviewer))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-16 20:01:30 --> Undefined variable $keyword
+in APPPATH\Views\reviewer\full_paper.php on line 45.
+ 1 APPPATH\Views\reviewer\full_paper.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $keyword', 'APPPATH\\Views\\reviewer\\full_paper.php', 45)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\reviewer\\full_paper.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('reviewer/full_paper', [], true)
+ 5 APPPATH\Controllers\Reviewer.php(55): view('reviewer/full_paper', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Reviewer->full_paper()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reviewer))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-16 20:13:58 --> Undefined variable $keyword
+in APPPATH\Views\reviewer\full_paper.php on line 45.
+ 1 APPPATH\Views\reviewer\full_paper.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $keyword', 'APPPATH\\Views\\reviewer\\full_paper.php', 45)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\reviewer\\full_paper.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('reviewer/full_paper', [], true)
+ 5 APPPATH\Controllers\Reviewer.php(67): view('reviewer/full_paper', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Reviewer->full_paper()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reviewer))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-16 20:14:24 --> Undefined variable $currentPage
+in APPPATH\Views\reviewer\full_paper.php on line 55.
+ 1 APPPATH\Views\reviewer\full_paper.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $currentPage', 'APPPATH\\Views\\reviewer\\full_paper.php', 55)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\reviewer\\full_paper.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('reviewer/full_paper', [], true)
+ 5 APPPATH\Controllers\Reviewer.php(68): view('reviewer/full_paper', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Reviewer->full_paper()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reviewer))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-16 20:16:14 --> Undefined variable $abstrak
+in APPPATH\Views\reviewer\full_paper.php on line 56.
+ 1 APPPATH\Views\reviewer\full_paper.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $abstrak', 'APPPATH\\Views\\reviewer\\full_paper.php', 56)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\reviewer\\full_paper.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('reviewer/full_paper', [], true)
+ 5 APPPATH\Controllers\Reviewer.php(71): view('reviewer/full_paper', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Reviewer->full_paper()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reviewer))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-16 21:00:58 --> Undefined variable $full
+in APPPATH\Views\reviewer\full_paper.php on line 144.
+ 1 APPPATH\Views\reviewer\full_paper.php(144): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $full', 'APPPATH\\Views\\reviewer\\full_paper.php', 144)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\reviewer\\full_paper.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('reviewer/full_paper', [], true)
+ 5 APPPATH\Controllers\Reviewer.php(71): view('reviewer/full_paper', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Reviewer->full_paper()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reviewer))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-16 21:24:35 --> Call to undefined method App\Models\FullModel::full_review_acc
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\Reviewer.php(60): CodeIgniter\Model->__call('full_review_acc', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Reviewer->full_paper()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reviewer))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-09-16 21:25:26 --> mysqli_sql_exception: Column 'status' in where clause is ambiguous in C:\xampp\htdocs\isceeradmin\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\isceeradmin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\isceeradmin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\isceeradmin\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\isceeradmin\system\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\isceeradmin\system\Model.php(550): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\isceeradmin\system\BaseModel.php(1085): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\isceeradmin\app\Controllers\Reviewer.php(60): CodeIgniter\BaseModel->paginate(10, 'full_paper')
+#7 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(904): App\Controllers\Reviewer->full_paper()
+#8 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reviewer))
+#9 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\isceeradmin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\isceeradmin\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2022-09-16 21:25:26 --> Column 'status' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `full_paper`
+JOIN `abstrak` as `c` ON `full_paper`.`abs_id`=`c`.`abs_id`
+JOIN `review` as `m` ON `c`.`abs_id`=`m`.`abs_id`
+JOIN `reviewer` as `n` ON `n`.`id`=`m`.`id_reviewer`
+JOIN `user` as `u` ON `u`.`id_user`=`n`.`id_user`
+WHERE `u`.`id_user` = \'15\'
+AND `status` = \'accepted\'
+AND YEAR(`created_at`) = \'2022\'
+AND `decision` IN (\'waiting_decision\',\'revision required\',\'accept\',\'decline\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `full_paper`
+JOIN `abstrak` as `c` ON `full_paper`.`abs_id`=`c`.`abs_id`
+JOIN `review` as `m` ON `c`.`abs_id`=`m`.`abs_id`
+JOIN `reviewer` as `n` ON `n`.`id`=`m`.`id_reviewer`
+JOIN `user` as `u` ON `u`.`id_user`=`n`.`id_user`
+WHERE `u`.`id_user` = \'15\'
+AND `status` = \'accepted\'
+AND YEAR(`created_at`) = \'2022\'
+AND `decision` IN (\'waiting_decision\',\'revision required\',\'accept\',\'decline\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `full_paper`
+JOIN `abstrak` as `c` ON `full_paper`.`abs_id`=`c`.`abs_id`
+JOIN `review` as `m` ON `c`.`abs_id`=`m`.`abs_id`
+JOIN `reviewer` as `n` ON `n`.`id`=`m`.`id_reviewer`
+JOIN `user` as `u` ON `u`.`id_user`=`n`.`id_user`
+WHERE `u`.`id_user` = \'15\'
+AND `status` = \'accepted\'
+AND YEAR(`created_at`) = \'2022\'
+AND `decision` IN (\'waiting_decision\',\'revision required\',\'accept\',\'decline\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `full_paper`
+JOIN `abstrak` as `c` ON `full_paper`.`abs_id`=`c`.`abs_id`
+JOIN `review` as `m` ON `c`.`abs_id`=`m`.`abs_id`
+JOIN `reviewer` as `n` ON `n`.`id`=`m`.`id_reviewer`
+JOIN `user` as `u` ON `u`.`id_user`=`n`.`id_user`
+WHERE `u`.`id_user` = :u.id_user:
+AND `status` = :status:
+AND YEAR(`created_at`) = :YEAR(`created_at`):
+AND `decision` IN :decision:', [...], false)
+ 5 SYSTEMPATH\Model.php(550): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1085): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Controllers\Reviewer.php(60): CodeIgniter\BaseModel->paginate(10, 'full_paper')
+ 8 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Reviewer->full_paper()
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reviewer))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-16 21:25:34 --> Undefined variable $full
+in APPPATH\Views\reviewer\full_paper.php on line 144.
+ 1 APPPATH\Views\reviewer\full_paper.php(144): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $full', 'APPPATH\\Views\\reviewer\\full_paper.php', 144)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\reviewer\\full_paper.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('reviewer/full_paper', [], true)
+ 5 APPPATH\Controllers\Reviewer.php(73): view('reviewer/full_paper', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Reviewer->full_paper()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reviewer))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
