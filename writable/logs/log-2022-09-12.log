@@ -1,0 +1,991 @@
+CRITICAL - 2022-09-12 02:16:57 --> Call to a member function paginate() on array
+in APPPATH\Controllers\Admin.php on line 56.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->abstrak()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-12 02:27:28 --> Call to a member function paginate() on array
+in APPPATH\Controllers\Admin.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->abstrak()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-12 02:27:30 --> Call to a member function paginate() on array
+in APPPATH\Controllers\Admin.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->abstrak()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-12 02:30:21 --> Attempt to read property "pager" on array
+in APPPATH\Controllers\Admin.php on line 58.
+ 1 APPPATH\Controllers\Admin.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "pager" on array', 'APPPATH\\Controllers\\Admin.php', 58)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->abstrak()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-12 02:30:27 --> Cannot use object of type stdClass as array
+in APPPATH\Views\admin\abstrak.php on line 44.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/abstrak', [], true)
+ 4 APPPATH\Controllers\Admin.php(61): view('admin/abstrak', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->abstrak()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-12 02:30:42 --> Call to a member function paginate() on array
+in APPPATH\Controllers\Admin.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->abstrak()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-12 02:32:09 --> Call to a member function paginate() on array
+in APPPATH\Controllers\Admin.php on line 53.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->abstrak()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-12 02:36:03 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::paginate()
+in APPPATH\Controllers\Admin.php on line 53.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->abstrak()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-12 02:36:17 --> Call to a member function paginate() on array
+in APPPATH\Controllers\Admin.php on line 53.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->abstrak()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-12 02:36:58 --> Call to a member function paginate() on array
+in APPPATH\Controllers\Admin.php on line 53.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->abstrak()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-12 02:37:10 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::get()
+in APPPATH\Controllers\Admin.php on line 53.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->abstrak()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-12 02:49:08 --> Call to a member function pagination() on array
+in APPPATH\Controllers\Admin.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->abstrak()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-12 03:07:03 --> Call to a member function pagination() on array
+in APPPATH\Controllers\Admin.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->abstrak()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-12 03:14:12 --> Call to undefined method App\Models\AbstrakModel::getResultArray
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\Admin.php(53): CodeIgniter\Model->__call('getResultArray', [])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->abstrak()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-09-12 03:14:23 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`abs_id`, `id_payment`, `payment_proof`, `transfer_date`, `transfer_time`, `...' at line 1 in C:\xampp\htdocs\isceeradmin\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\isceeradmin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `SELECT`...', 0)
+#1 C:\xampp\htdocs\isceeradmin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `SELECT`...')
+#2 C:\xampp\htdocs\isceeradmin\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `SELECT`...')
+#3 C:\xampp\htdocs\isceeradmin\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `SELECT`...', Array, false)
+#4 C:\xampp\htdocs\isceeradmin\system\Model.php(771): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\isceeradmin\app\Controllers\Admin.php(53): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(904): App\Controllers\Admin->abstrak()
+#7 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\isceeradmin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\isceeradmin\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-09-12 03:14:23 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`abs_id`, `id_payment`, `payment_proof`, `transfer_date`, `transfer_time`, `...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `SELECT` `abstrak`.`abs_id`, `id_payment`, `payment_proof`, `transfer_date`, `transfer_time`, `bank_name`, `account_name`, `account_number`, `amount`, `payment_status`, `file_rp`, `judul`, `penulis`, `poster`, `created_at`, `last_update`, `status_poster`, `submit_poster`, `update_poster`, `afiliasi`, `abstrak`.`id_scope`, `scope`, `created_payment`, `update_payment`, `keyword`, `abstrak`, `presenter`, `decision`, `decision_revised`, `created_revised`, `last_revised`, `notes`, `notes_revised`, `user`.`id_user`, `nama`, `abstrak`.`status`, `submit_date`, `uniqid`, `paper_id`, `file_fp`, update_date FROM abstrak join scope on scope.id_scope=abstrak.id_scope join user on user.id_user=abstrak.id_user
+        inner join full_paper on abstrak.abs_id=full_paper.abs_id inner join payment on abstrak.abs_id=payment.abs_id inner join revised_paper on revised_paper.abs_id=abstrak.abs_id
+        inner join poster on poster.abs_id=abstrak.abs_id where YEAR(submit_date) = \'2022\' order by abstrak.abs_id ASC
+FROM `abstrak`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `SELECT` `abstrak`.`abs_id`, `id_payment`, `payment_proof`, `transfer_date`, `transfer_time`, `bank_name`, `account_name`, `account_number`, `amount`, `payment_status`, `file_rp`, `judul`, `penulis`, `poster`, `created_at`, `last_update`, `status_poster`, `submit_poster`, `update_poster`, `afiliasi`, `abstrak`.`id_scope`, `scope`, `created_payment`, `update_payment`, `keyword`, `abstrak`, `presenter`, `decision`, `decision_revised`, `created_revised`, `last_revised`, `notes`, `notes_revised`, `user`.`id_user`, `nama`, `abstrak`.`status`, `submit_date`, `uniqid`, `paper_id`, `file_fp`, update_date FROM abstrak join scope on scope.id_scope=abstrak.id_scope join user on user.id_user=abstrak.id_user
+        inner join full_paper on abstrak.abs_id=full_paper.abs_id inner join payment on abstrak.abs_id=payment.abs_id inner join revised_paper on revised_paper.abs_id=abstrak.abs_id
+        inner join poster on poster.abs_id=abstrak.abs_id where YEAR(submit_date) = \'2022\' order by abstrak.abs_id ASC
+FROM `abstrak`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `SELECT` `abstrak`.`abs_id`, `id_payment`, `payment_proof`, `transfer_date`, `transfer_time`, `bank_name`, `account_name`, `account_number`, `amount`, `payment_status`, `file_rp`, `judul`, `penulis`, `poster`, `created_at`, `last_update`, `status_poster`, `submit_poster`, `update_poster`, `afiliasi`, `abstrak`.`id_scope`, `scope`, `created_payment`, `update_payment`, `keyword`, `abstrak`, `presenter`, `decision`, `decision_revised`, `created_revised`, `last_revised`, `notes`, `notes_revised`, `user`.`id_user`, `nama`, `abstrak`.`status`, `submit_date`, `uniqid`, `paper_id`, `file_fp`, update_date FROM abstrak join scope on scope.id_scope=abstrak.id_scope join user on user.id_user=abstrak.id_user
+        inner join full_paper on abstrak.abs_id=full_paper.abs_id inner join payment on abstrak.abs_id=payment.abs_id inner join revised_paper on revised_paper.abs_id=abstrak.abs_id
+        inner join poster on poster.abs_id=abstrak.abs_id where YEAR(submit_date) = \'2022\' order by abstrak.abs_id ASC
+FROM `abstrak`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `SELECT` `abstrak`.`abs_id`, `id_payment`, `payment_proof`, `transfer_date`, `transfer_time`, `bank_name`, `account_name`, `account_number`, `amount`, `payment_status`, `file_rp`, `judul`, `penulis`, `poster`, `created_at`, `last_update`, `status_poster`, `submit_poster`, `update_poster`, `afiliasi`, `abstrak`.`id_scope`, `scope`, `created_payment`, `update_payment`, `keyword`, `abstrak`, `presenter`, `decision`, `decision_revised`, `created_revised`, `last_revised`, `notes`, `notes_revised`, `user`.`id_user`, `nama`, `abstrak`.`status`, `submit_date`, `uniqid`, `paper_id`, `file_fp`, update_date FROM abstrak join scope on scope.id_scope=abstrak.id_scope join user on user.id_user=abstrak.id_user
+        inner join full_paper on abstrak.abs_id=full_paper.abs_id inner join payment on abstrak.abs_id=payment.abs_id inner join revised_paper on revised_paper.abs_id=abstrak.abs_id
+        inner join poster on poster.abs_id=abstrak.abs_id where YEAR(submit_date) = \'2022\' order by abstrak.abs_id ASC
+FROM `abstrak`', [], false)
+ 5 SYSTEMPATH\Model.php(771): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Admin.php(53): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->abstrak()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-09-12 03:15:22 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`abs_id`, `file_rp`, `judul`, `penulis`, `poster`, `created_at`, `last_updat...' at line 1 in C:\xampp\htdocs\isceeradmin\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\isceeradmin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `SELECT`...', 0)
+#1 C:\xampp\htdocs\isceeradmin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `SELECT`...')
+#2 C:\xampp\htdocs\isceeradmin\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `SELECT`...')
+#3 C:\xampp\htdocs\isceeradmin\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `SELECT`...', Array, false)
+#4 C:\xampp\htdocs\isceeradmin\system\Model.php(771): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\isceeradmin\app\Controllers\Admin.php(53): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(904): App\Controllers\Admin->abstrak()
+#7 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\isceeradmin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\isceeradmin\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-09-12 03:15:22 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`abs_id`, `file_rp`, `judul`, `penulis`, `poster`, `created_at`, `last_updat...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `SELECT` `abstrak`.`abs_id`, `file_rp`, `judul`, `penulis`, `poster`, `created_at`, `last_update`, `status_poster`, `submit_poster`, `update_poster`, `afiliasi`, `abstrak`.`id_scope`, `scope`, `created_payment`, `update_payment`, `keyword`, `abstrak`, `presenter`, `decision`, `decision_revised`, `created_revised`, `last_revised`, `notes`, `notes_revised`, `user`.`id_user`, `nama`, `abstrak`.`status`, `submit_date`, `uniqid`, `paper_id`, `file_fp`, update_date FROM abstrak join scope on scope.id_scope=abstrak.id_scope join user on user.id_user=abstrak.id_user
+        inner join full_paper on abstrak.abs_id=full_paper.abs_id inner join payment on abstrak.abs_id=payment.abs_id inner join revised_paper on revised_paper.abs_id=abstrak.abs_id
+        inner join poster on poster.abs_id=abstrak.abs_id where YEAR(submit_date) = \'2022\' order by abstrak.abs_id ASC
+FROM `abstrak`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `SELECT` `abstrak`.`abs_id`, `file_rp`, `judul`, `penulis`, `poster`, `created_at`, `last_update`, `status_poster`, `submit_poster`, `update_poster`, `afiliasi`, `abstrak`.`id_scope`, `scope`, `created_payment`, `update_payment`, `keyword`, `abstrak`, `presenter`, `decision`, `decision_revised`, `created_revised`, `last_revised`, `notes`, `notes_revised`, `user`.`id_user`, `nama`, `abstrak`.`status`, `submit_date`, `uniqid`, `paper_id`, `file_fp`, update_date FROM abstrak join scope on scope.id_scope=abstrak.id_scope join user on user.id_user=abstrak.id_user
+        inner join full_paper on abstrak.abs_id=full_paper.abs_id inner join payment on abstrak.abs_id=payment.abs_id inner join revised_paper on revised_paper.abs_id=abstrak.abs_id
+        inner join poster on poster.abs_id=abstrak.abs_id where YEAR(submit_date) = \'2022\' order by abstrak.abs_id ASC
+FROM `abstrak`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `SELECT` `abstrak`.`abs_id`, `file_rp`, `judul`, `penulis`, `poster`, `created_at`, `last_update`, `status_poster`, `submit_poster`, `update_poster`, `afiliasi`, `abstrak`.`id_scope`, `scope`, `created_payment`, `update_payment`, `keyword`, `abstrak`, `presenter`, `decision`, `decision_revised`, `created_revised`, `last_revised`, `notes`, `notes_revised`, `user`.`id_user`, `nama`, `abstrak`.`status`, `submit_date`, `uniqid`, `paper_id`, `file_fp`, update_date FROM abstrak join scope on scope.id_scope=abstrak.id_scope join user on user.id_user=abstrak.id_user
+        inner join full_paper on abstrak.abs_id=full_paper.abs_id inner join payment on abstrak.abs_id=payment.abs_id inner join revised_paper on revised_paper.abs_id=abstrak.abs_id
+        inner join poster on poster.abs_id=abstrak.abs_id where YEAR(submit_date) = \'2022\' order by abstrak.abs_id ASC
+FROM `abstrak`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `SELECT` `abstrak`.`abs_id`, `file_rp`, `judul`, `penulis`, `poster`, `created_at`, `last_update`, `status_poster`, `submit_poster`, `update_poster`, `afiliasi`, `abstrak`.`id_scope`, `scope`, `created_payment`, `update_payment`, `keyword`, `abstrak`, `presenter`, `decision`, `decision_revised`, `created_revised`, `last_revised`, `notes`, `notes_revised`, `user`.`id_user`, `nama`, `abstrak`.`status`, `submit_date`, `uniqid`, `paper_id`, `file_fp`, update_date FROM abstrak join scope on scope.id_scope=abstrak.id_scope join user on user.id_user=abstrak.id_user
+        inner join full_paper on abstrak.abs_id=full_paper.abs_id inner join payment on abstrak.abs_id=payment.abs_id inner join revised_paper on revised_paper.abs_id=abstrak.abs_id
+        inner join poster on poster.abs_id=abstrak.abs_id where YEAR(submit_date) = \'2022\' order by abstrak.abs_id ASC
+FROM `abstrak`', [], false)
+ 5 SYSTEMPATH\Model.php(771): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Admin.php(53): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->abstrak()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-09-12 03:15:35 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM `abstrak`' at line 4 in C:\xampp\htdocs\isceeradmin\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\isceeradmin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `SELECT`...', 0)
+#1 C:\xampp\htdocs\isceeradmin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `SELECT`...')
+#2 C:\xampp\htdocs\isceeradmin\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `SELECT`...')
+#3 C:\xampp\htdocs\isceeradmin\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `SELECT`...', Array, false)
+#4 C:\xampp\htdocs\isceeradmin\system\Model.php(771): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\isceeradmin\app\Controllers\Admin.php(53): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(904): App\Controllers\Admin->abstrak()
+#7 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\isceeradmin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\isceeradmin\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-09-12 03:15:35 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM `abstrak`' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `SELECT` `abs_id`, `id_payment`, `payment_proof`, `transfer_date`, `transfer_time`, `bank_name`, `account_name`, `account_number`, `amount`, `payment_status`, `file_rp`, `judul`, `penulis`, `poster`, `created_at`, `last_update`, `status_poster`, `submit_poster`, `update_poster`, `afiliasi`, `abstrak`.`id_scope`, `scope`, `created_payment`, `update_payment`, `keyword`, `abstrak`, `presenter`, `decision`, `decision_revised`, `created_revised`, `last_revised`, `notes`, `notes_revised`, `user`.`id_user`, `nama`, `abstrak`.`status`, `submit_date`, `uniqid`, `paper_id`, `file_fp`, update_date FROM abstrak join scope on scope.id_scope=abstrak.id_scope join user on user.id_user=abstrak.id_user
+        inner join full_paper on abstrak.abs_id=full_paper.abs_id inner join payment on abstrak.abs_id=payment.abs_id inner join revised_paper on revised_paper.abs_id=abstrak.abs_id
+        inner join poster on poster.abs_id=abstrak.abs_id where YEAR(submit_date) = \'2022\' order by abstrak.abs_id ASC
+FROM `abstrak`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `SELECT` `abs_id`, `id_payment`, `payment_proof`, `transfer_date`, `transfer_time`, `bank_name`, `account_name`, `account_number`, `amount`, `payment_status`, `file_rp`, `judul`, `penulis`, `poster`, `created_at`, `last_update`, `status_poster`, `submit_poster`, `update_poster`, `afiliasi`, `abstrak`.`id_scope`, `scope`, `created_payment`, `update_payment`, `keyword`, `abstrak`, `presenter`, `decision`, `decision_revised`, `created_revised`, `last_revised`, `notes`, `notes_revised`, `user`.`id_user`, `nama`, `abstrak`.`status`, `submit_date`, `uniqid`, `paper_id`, `file_fp`, update_date FROM abstrak join scope on scope.id_scope=abstrak.id_scope join user on user.id_user=abstrak.id_user
+        inner join full_paper on abstrak.abs_id=full_paper.abs_id inner join payment on abstrak.abs_id=payment.abs_id inner join revised_paper on revised_paper.abs_id=abstrak.abs_id
+        inner join poster on poster.abs_id=abstrak.abs_id where YEAR(submit_date) = \'2022\' order by abstrak.abs_id ASC
+FROM `abstrak`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `SELECT` `abs_id`, `id_payment`, `payment_proof`, `transfer_date`, `transfer_time`, `bank_name`, `account_name`, `account_number`, `amount`, `payment_status`, `file_rp`, `judul`, `penulis`, `poster`, `created_at`, `last_update`, `status_poster`, `submit_poster`, `update_poster`, `afiliasi`, `abstrak`.`id_scope`, `scope`, `created_payment`, `update_payment`, `keyword`, `abstrak`, `presenter`, `decision`, `decision_revised`, `created_revised`, `last_revised`, `notes`, `notes_revised`, `user`.`id_user`, `nama`, `abstrak`.`status`, `submit_date`, `uniqid`, `paper_id`, `file_fp`, update_date FROM abstrak join scope on scope.id_scope=abstrak.id_scope join user on user.id_user=abstrak.id_user
+        inner join full_paper on abstrak.abs_id=full_paper.abs_id inner join payment on abstrak.abs_id=payment.abs_id inner join revised_paper on revised_paper.abs_id=abstrak.abs_id
+        inner join poster on poster.abs_id=abstrak.abs_id where YEAR(submit_date) = \'2022\' order by abstrak.abs_id ASC
+FROM `abstrak`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `SELECT` `abs_id`, `id_payment`, `payment_proof`, `transfer_date`, `transfer_time`, `bank_name`, `account_name`, `account_number`, `amount`, `payment_status`, `file_rp`, `judul`, `penulis`, `poster`, `created_at`, `last_update`, `status_poster`, `submit_poster`, `update_poster`, `afiliasi`, `abstrak`.`id_scope`, `scope`, `created_payment`, `update_payment`, `keyword`, `abstrak`, `presenter`, `decision`, `decision_revised`, `created_revised`, `last_revised`, `notes`, `notes_revised`, `user`.`id_user`, `nama`, `abstrak`.`status`, `submit_date`, `uniqid`, `paper_id`, `file_fp`, update_date FROM abstrak join scope on scope.id_scope=abstrak.id_scope join user on user.id_user=abstrak.id_user
+        inner join full_paper on abstrak.abs_id=full_paper.abs_id inner join payment on abstrak.abs_id=payment.abs_id inner join revised_paper on revised_paper.abs_id=abstrak.abs_id
+        inner join poster on poster.abs_id=abstrak.abs_id where YEAR(submit_date) = \'2022\' order by abstrak.abs_id ASC
+FROM `abstrak`', [], false)
+ 5 SYSTEMPATH\Model.php(771): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Admin.php(53): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->abstrak()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-09-12 03:20:40 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SELECT Year(submit_date) = '2022'
+ORDER BY `abstrak`.`abs_id` ASC' at line 4 in C:\xampp\htdocs\isceeradmin\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\isceeradmin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `abstrak...', 0)
+#1 C:\xampp\htdocs\isceeradmin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `abstrak...')
+#2 C:\xampp\htdocs\isceeradmin\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `abstrak...')
+#3 C:\xampp\htdocs\isceeradmin\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `abstrak...', Array, false)
+#4 C:\xampp\htdocs\isceeradmin\system\Model.php(771): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\isceeradmin\app\Controllers\Admin.php(63): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(904): App\Controllers\Admin->abstrak()
+#7 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\isceeradmin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\isceeradmin\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-09-12 03:20:40 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SELECT Year(submit_date) = '2022'
+ORDER BY `abstrak`.`abs_id` ASC' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `abstrak`.`abs_id`, `id_scope`, `judul`, `abstrak`, `penulis`, `afiliasi`, `presenter`, `keyword`, `status`, `scope`
+FROM `abstrak`
+JOIN `scope` ON `scope`.`id_scope`=`abstrak`.`id_scope`
+WHERE SELECT Year(submit_date) = \'2022\'
+ORDER BY `abstrak`.`abs_id` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `abstrak`.`abs_id`, `id_scope`, `judul`, `abstrak`, `penulis`, `afiliasi`, `presenter`, `keyword`, `status`, `scope`
+FROM `abstrak`
+JOIN `scope` ON `scope`.`id_scope`=`abstrak`.`id_scope`
+WHERE SELECT Year(submit_date) = \'2022\'
+ORDER BY `abstrak`.`abs_id` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `abstrak`.`abs_id`, `id_scope`, `judul`, `abstrak`, `penulis`, `afiliasi`, `presenter`, `keyword`, `status`, `scope`
+FROM `abstrak`
+JOIN `scope` ON `scope`.`id_scope`=`abstrak`.`id_scope`
+WHERE SELECT Year(submit_date) = \'2022\'
+ORDER BY `abstrak`.`abs_id` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `abstrak`.`abs_id`, `id_scope`, `judul`, `abstrak`, `penulis`, `afiliasi`, `presenter`, `keyword`, `status`, `scope`
+FROM `abstrak`
+JOIN `scope` ON `scope`.`id_scope`=`abstrak`.`id_scope`
+WHERE SELECT Year(submit_date) = :SELECT Year(submit_date):
+ORDER BY `abstrak`.`abs_id` ASC', [...], false)
+ 5 SYSTEMPATH\Model.php(771): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Admin.php(63): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->abstrak()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-09-12 03:21:01 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SELECT Year(submit_date) = '2022'
+ORDER BY `abs_id` ASC' at line 4 in C:\xampp\htdocs\isceeradmin\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\isceeradmin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `abstrak...', 0)
+#1 C:\xampp\htdocs\isceeradmin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `abstrak...')
+#2 C:\xampp\htdocs\isceeradmin\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `abstrak...')
+#3 C:\xampp\htdocs\isceeradmin\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `abstrak...', Array, false)
+#4 C:\xampp\htdocs\isceeradmin\system\Model.php(771): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\isceeradmin\app\Controllers\Admin.php(63): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(904): App\Controllers\Admin->abstrak()
+#7 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\isceeradmin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\isceeradmin\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-09-12 03:21:01 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SELECT Year(submit_date) = '2022'
+ORDER BY `abs_id` ASC' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `abstrak`.`abs_id`, `id_scope`, `judul`, `abstrak`, `penulis`, `afiliasi`, `presenter`, `keyword`, `status`, `scope`
+FROM `abstrak`
+JOIN `scope` ON `scope`.`id_scope`=`abstrak`.`id_scope`
+WHERE SELECT Year(submit_date) = \'2022\'
+ORDER BY `abs_id` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `abstrak`.`abs_id`, `id_scope`, `judul`, `abstrak`, `penulis`, `afiliasi`, `presenter`, `keyword`, `status`, `scope`
+FROM `abstrak`
+JOIN `scope` ON `scope`.`id_scope`=`abstrak`.`id_scope`
+WHERE SELECT Year(submit_date) = \'2022\'
+ORDER BY `abs_id` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `abstrak`.`abs_id`, `id_scope`, `judul`, `abstrak`, `penulis`, `afiliasi`, `presenter`, `keyword`, `status`, `scope`
+FROM `abstrak`
+JOIN `scope` ON `scope`.`id_scope`=`abstrak`.`id_scope`
+WHERE SELECT Year(submit_date) = \'2022\'
+ORDER BY `abs_id` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `abstrak`.`abs_id`, `id_scope`, `judul`, `abstrak`, `penulis`, `afiliasi`, `presenter`, `keyword`, `status`, `scope`
+FROM `abstrak`
+JOIN `scope` ON `scope`.`id_scope`=`abstrak`.`id_scope`
+WHERE SELECT Year(submit_date) = :SELECT Year(submit_date):
+ORDER BY `abs_id` ASC', [...], false)
+ 5 SYSTEMPATH\Model.php(771): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Admin.php(63): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->abstrak()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-09-12 03:21:47 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SELECT Year(submit_date) = '2022'
+ORDER BY `abs_id` DESC' at line 4 in C:\xampp\htdocs\isceeradmin\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\isceeradmin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `abstrak...', 0)
+#1 C:\xampp\htdocs\isceeradmin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `abstrak...')
+#2 C:\xampp\htdocs\isceeradmin\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `abstrak...')
+#3 C:\xampp\htdocs\isceeradmin\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `abstrak...', Array, false)
+#4 C:\xampp\htdocs\isceeradmin\system\Model.php(771): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\isceeradmin\app\Controllers\Admin.php(63): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(904): App\Controllers\Admin->abstrak()
+#7 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\isceeradmin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\isceeradmin\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-09-12 03:21:47 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SELECT Year(submit_date) = '2022'
+ORDER BY `abs_id` DESC' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `abstrak`.`abs_id`, `id_scope`, `judul`, `abstrak`, `penulis`, `afiliasi`, `presenter`, `keyword`, `status`, `scope`
+FROM `abstrak`
+JOIN `scope` ON `scope`.`id_scope`=`abstrak`.`id_scope`
+WHERE SELECT Year(submit_date) = \'2022\'
+ORDER BY `abs_id` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `abstrak`.`abs_id`, `id_scope`, `judul`, `abstrak`, `penulis`, `afiliasi`, `presenter`, `keyword`, `status`, `scope`
+FROM `abstrak`
+JOIN `scope` ON `scope`.`id_scope`=`abstrak`.`id_scope`
+WHERE SELECT Year(submit_date) = \'2022\'
+ORDER BY `abs_id` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `abstrak`.`abs_id`, `id_scope`, `judul`, `abstrak`, `penulis`, `afiliasi`, `presenter`, `keyword`, `status`, `scope`
+FROM `abstrak`
+JOIN `scope` ON `scope`.`id_scope`=`abstrak`.`id_scope`
+WHERE SELECT Year(submit_date) = \'2022\'
+ORDER BY `abs_id` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `abstrak`.`abs_id`, `id_scope`, `judul`, `abstrak`, `penulis`, `afiliasi`, `presenter`, `keyword`, `status`, `scope`
+FROM `abstrak`
+JOIN `scope` ON `scope`.`id_scope`=`abstrak`.`id_scope`
+WHERE SELECT Year(submit_date) = :SELECT Year(submit_date):
+ORDER BY `abs_id` DESC', [...], false)
+ 5 SYSTEMPATH\Model.php(771): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Admin.php(63): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->abstrak()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-09-12 03:22:13 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SELECT Year(submit_date) from abstrak = '2022'
+ORDER BY `abs_id` DESC' at line 4 in C:\xampp\htdocs\isceeradmin\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\isceeradmin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `abstrak...', 0)
+#1 C:\xampp\htdocs\isceeradmin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `abstrak...')
+#2 C:\xampp\htdocs\isceeradmin\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `abstrak...')
+#3 C:\xampp\htdocs\isceeradmin\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `abstrak...', Array, false)
+#4 C:\xampp\htdocs\isceeradmin\system\Model.php(771): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\isceeradmin\app\Controllers\Admin.php(63): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(904): App\Controllers\Admin->abstrak()
+#7 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\isceeradmin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\isceeradmin\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-09-12 03:22:13 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SELECT Year(submit_date) from abstrak = '2022'
+ORDER BY `abs_id` DESC' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `abstrak`.`abs_id`, `id_scope`, `judul`, `abstrak`, `penulis`, `afiliasi`, `presenter`, `keyword`, `status`, `scope`
+FROM `abstrak`
+JOIN `scope` ON `scope`.`id_scope`=`abstrak`.`id_scope`
+WHERE SELECT Year(submit_date) from abstrak = \'2022\'
+ORDER BY `abs_id` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `abstrak`.`abs_id`, `id_scope`, `judul`, `abstrak`, `penulis`, `afiliasi`, `presenter`, `keyword`, `status`, `scope`
+FROM `abstrak`
+JOIN `scope` ON `scope`.`id_scope`=`abstrak`.`id_scope`
+WHERE SELECT Year(submit_date) from abstrak = \'2022\'
+ORDER BY `abs_id` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `abstrak`.`abs_id`, `id_scope`, `judul`, `abstrak`, `penulis`, `afiliasi`, `presenter`, `keyword`, `status`, `scope`
+FROM `abstrak`
+JOIN `scope` ON `scope`.`id_scope`=`abstrak`.`id_scope`
+WHERE SELECT Year(submit_date) from abstrak = \'2022\'
+ORDER BY `abs_id` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `abstrak`.`abs_id`, `id_scope`, `judul`, `abstrak`, `penulis`, `afiliasi`, `presenter`, `keyword`, `status`, `scope`
+FROM `abstrak`
+JOIN `scope` ON `scope`.`id_scope`=`abstrak`.`id_scope`
+WHERE SELECT Year(submit_date) from abstrak = :SELECT Year(submit_date) from abstrak:
+ORDER BY `abs_id` DESC', [...], false)
+ 5 SYSTEMPATH\Model.php(771): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Admin.php(63): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->abstrak()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-09-12 03:23:24 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SELECT Year(submit_date) from abstrak as submit_date = '2022'
+ORDER BY `abs_i...' at line 4 in C:\xampp\htdocs\isceeradmin\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\isceeradmin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `abstrak...', 0)
+#1 C:\xampp\htdocs\isceeradmin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `abstrak...')
+#2 C:\xampp\htdocs\isceeradmin\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `abstrak...')
+#3 C:\xampp\htdocs\isceeradmin\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `abstrak...', Array, false)
+#4 C:\xampp\htdocs\isceeradmin\system\Model.php(771): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\isceeradmin\app\Controllers\Admin.php(63): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(904): App\Controllers\Admin->abstrak()
+#7 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\isceeradmin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\isceeradmin\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-09-12 03:23:24 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SELECT Year(submit_date) from abstrak as submit_date = '2022'
+ORDER BY `abs_i...' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `abstrak`.`abs_id`, `id_scope`, `judul`, `abstrak`, `penulis`, `afiliasi`, `presenter`, `keyword`, `status`, `scope`
+FROM `abstrak`
+JOIN `scope` ON `scope`.`id_scope`=`abstrak`.`id_scope`
+WHERE SELECT Year(submit_date) from abstrak as submit_date = \'2022\'
+ORDER BY `abs_id` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `abstrak`.`abs_id`, `id_scope`, `judul`, `abstrak`, `penulis`, `afiliasi`, `presenter`, `keyword`, `status`, `scope`
+FROM `abstrak`
+JOIN `scope` ON `scope`.`id_scope`=`abstrak`.`id_scope`
+WHERE SELECT Year(submit_date) from abstrak as submit_date = \'2022\'
+ORDER BY `abs_id` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `abstrak`.`abs_id`, `id_scope`, `judul`, `abstrak`, `penulis`, `afiliasi`, `presenter`, `keyword`, `status`, `scope`
+FROM `abstrak`
+JOIN `scope` ON `scope`.`id_scope`=`abstrak`.`id_scope`
+WHERE SELECT Year(submit_date) from abstrak as submit_date = \'2022\'
+ORDER BY `abs_id` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `abstrak`.`abs_id`, `id_scope`, `judul`, `abstrak`, `penulis`, `afiliasi`, `presenter`, `keyword`, `status`, `scope`
+FROM `abstrak`
+JOIN `scope` ON `scope`.`id_scope`=`abstrak`.`id_scope`
+WHERE SELECT Year(submit_date) from abstrak as submit_date = :SELECT Year(submit_date) from abstrak as submit_date:
+ORDER BY `abs_id` DESC', [...], false)
+ 5 SYSTEMPATH\Model.php(771): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Admin.php(63): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->abstrak()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-09-12 03:23:36 --> mysqli_sql_exception: Column 'id_scope' in field list is ambiguous in C:\xampp\htdocs\isceeradmin\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\isceeradmin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `abstrak...', 0)
+#1 C:\xampp\htdocs\isceeradmin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `abstrak...')
+#2 C:\xampp\htdocs\isceeradmin\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `abstrak...')
+#3 C:\xampp\htdocs\isceeradmin\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `abstrak...', Array, false)
+#4 C:\xampp\htdocs\isceeradmin\system\Model.php(771): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\isceeradmin\app\Controllers\Admin.php(63): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(904): App\Controllers\Admin->abstrak()
+#7 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\isceeradmin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\isceeradmin\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-09-12 03:23:36 --> Column 'id_scope' in field list is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `abstrak`.`abs_id`, `id_scope`, `judul`, `abstrak`, `penulis`, `afiliasi`, `presenter`, `keyword`, `status`, `scope`
+FROM `abstrak`
+JOIN `scope` ON `scope`.`id_scope`=`abstrak`.`id_scope`
+ORDER BY `abs_id` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `abstrak`.`abs_id`, `id_scope`, `judul`, `abstrak`, `penulis`, `afiliasi`, `presenter`, `keyword`, `status`, `scope`
+FROM `abstrak`
+JOIN `scope` ON `scope`.`id_scope`=`abstrak`.`id_scope`
+ORDER BY `abs_id` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `abstrak`.`abs_id`, `id_scope`, `judul`, `abstrak`, `penulis`, `afiliasi`, `presenter`, `keyword`, `status`, `scope`
+FROM `abstrak`
+JOIN `scope` ON `scope`.`id_scope`=`abstrak`.`id_scope`
+ORDER BY `abs_id` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `abstrak`.`abs_id`, `id_scope`, `judul`, `abstrak`, `penulis`, `afiliasi`, `presenter`, `keyword`, `status`, `scope`
+FROM `abstrak`
+JOIN `scope` ON `scope`.`id_scope`=`abstrak`.`id_scope`
+ORDER BY `abs_id` DESC', [], false)
+ 5 SYSTEMPATH\Model.php(771): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Admin.php(63): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->abstrak()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-12 03:23:44 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::pagination()
+in APPPATH\Controllers\Admin.php on line 67.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->abstrak()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-12 03:24:21 --> Call to undefined method App\Models\AbstrakModel::pagination
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\Admin.php(63): CodeIgniter\Model->__call('pagination', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->abstrak()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-12 03:24:43 --> CodeIgniter\Database\BaseBuilder::get(): Argument #2 ($offset) must be of type int, string given, called in C:\xampp\htdocs\isceeradmin\system\Model.php on line 771
+in SYSTEMPATH\Database\BaseBuilder.php on line 1577.
+ 1 SYSTEMPATH\Model.php(771): CodeIgniter\Database\BaseBuilder->get(10, 'abstrak')
+ 2 APPPATH\Controllers\Admin.php(63): CodeIgniter\Model->__call('get', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->abstrak()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-12 03:25:12 --> Call to undefined method App\Models\AbstrakModel::pagination
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\Admin.php(63): CodeIgniter\Model->__call('pagination', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->abstrak()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-09-12 03:25:55 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SELECT Year(submit_date) = '2022'
+ORDER BY `abs_id` DESC' at line 4 in C:\xampp\htdocs\isceeradmin\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\isceeradmin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `abstrak...', 0)
+#1 C:\xampp\htdocs\isceeradmin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `abstrak...')
+#2 C:\xampp\htdocs\isceeradmin\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `abstrak...')
+#3 C:\xampp\htdocs\isceeradmin\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `abstrak...', Array, false)
+#4 C:\xampp\htdocs\isceeradmin\system\Model.php(771): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\isceeradmin\app\Controllers\Admin.php(63): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(904): App\Controllers\Admin->abstrak()
+#7 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\isceeradmin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\isceeradmin\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-09-12 03:25:55 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SELECT Year(submit_date) = '2022'
+ORDER BY `abs_id` DESC' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `abstrak`.`abs_id`, `id_scope`, `judul`, `abstrak`, `penulis`, `afiliasi`, `presenter`, `keyword`, `status`, `scope`
+FROM `abstrak`
+JOIN `scope` ON `scope`.`id_scope`=`abstrak`.`id_scope`
+WHERE SELECT Year(submit_date) = \'2022\'
+ORDER BY `abs_id` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `abstrak`.`abs_id`, `id_scope`, `judul`, `abstrak`, `penulis`, `afiliasi`, `presenter`, `keyword`, `status`, `scope`
+FROM `abstrak`
+JOIN `scope` ON `scope`.`id_scope`=`abstrak`.`id_scope`
+WHERE SELECT Year(submit_date) = \'2022\'
+ORDER BY `abs_id` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `abstrak`.`abs_id`, `id_scope`, `judul`, `abstrak`, `penulis`, `afiliasi`, `presenter`, `keyword`, `status`, `scope`
+FROM `abstrak`
+JOIN `scope` ON `scope`.`id_scope`=`abstrak`.`id_scope`
+WHERE SELECT Year(submit_date) = \'2022\'
+ORDER BY `abs_id` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `abstrak`.`abs_id`, `id_scope`, `judul`, `abstrak`, `penulis`, `afiliasi`, `presenter`, `keyword`, `status`, `scope`
+FROM `abstrak`
+JOIN `scope` ON `scope`.`id_scope`=`abstrak`.`id_scope`
+WHERE SELECT Year(submit_date) = :SELECT Year(submit_date):
+ORDER BY `abs_id` DESC', [...], false)
+ 5 SYSTEMPATH\Model.php(771): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Admin.php(63): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->abstrak()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-09-12 03:26:06 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SELECT Year(submit_date)
+FROM `abstrak`
+JOIN `scope` ON `scope`.`id_scope`=`a...' at line 1 in C:\xampp\htdocs\isceeradmin\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\isceeradmin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `abstrak...', 0)
+#1 C:\xampp\htdocs\isceeradmin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `abstrak...')
+#2 C:\xampp\htdocs\isceeradmin\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `abstrak...')
+#3 C:\xampp\htdocs\isceeradmin\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `abstrak...', Array, false)
+#4 C:\xampp\htdocs\isceeradmin\system\Model.php(771): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\isceeradmin\app\Controllers\Admin.php(63): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(904): App\Controllers\Admin->abstrak()
+#7 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\isceeradmin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\isceeradmin\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-09-12 03:26:06 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SELECT Year(submit_date)
+FROM `abstrak`
+JOIN `scope` ON `scope`.`id_scope`=`a...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `abstrak`.`abs_id`, `id_scope`, `judul`, `abstrak`, `penulis`, `afiliasi`, `presenter`, `keyword`, `status`, `scope`, SELECT Year(submit_date)
+FROM `abstrak`
+JOIN `scope` ON `scope`.`id_scope`=`abstrak`.`id_scope`
+ORDER BY `abs_id` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `abstrak`.`abs_id`, `id_scope`, `judul`, `abstrak`, `penulis`, `afiliasi`, `presenter`, `keyword`, `status`, `scope`, SELECT Year(submit_date)
+FROM `abstrak`
+JOIN `scope` ON `scope`.`id_scope`=`abstrak`.`id_scope`
+ORDER BY `abs_id` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `abstrak`.`abs_id`, `id_scope`, `judul`, `abstrak`, `penulis`, `afiliasi`, `presenter`, `keyword`, `status`, `scope`, SELECT Year(submit_date)
+FROM `abstrak`
+JOIN `scope` ON `scope`.`id_scope`=`abstrak`.`id_scope`
+ORDER BY `abs_id` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `abstrak`.`abs_id`, `id_scope`, `judul`, `abstrak`, `penulis`, `afiliasi`, `presenter`, `keyword`, `status`, `scope`, SELECT Year(submit_date)
+FROM `abstrak`
+JOIN `scope` ON `scope`.`id_scope`=`abstrak`.`id_scope`
+ORDER BY `abs_id` DESC', [], false)
+ 5 SYSTEMPATH\Model.php(771): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Admin.php(63): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->abstrak()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-09-12 03:26:54 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SELECT Year(submit_date) = '2022'
+ORDER BY `abs_id` DESC' at line 4 in C:\xampp\htdocs\isceeradmin\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\isceeradmin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `abstrak...', 0)
+#1 C:\xampp\htdocs\isceeradmin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `abstrak...')
+#2 C:\xampp\htdocs\isceeradmin\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `abstrak...')
+#3 C:\xampp\htdocs\isceeradmin\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `abstrak...', Array, false)
+#4 C:\xampp\htdocs\isceeradmin\system\Model.php(771): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\isceeradmin\app\Controllers\Admin.php(63): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(904): App\Controllers\Admin->abstrak()
+#7 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\isceeradmin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\isceeradmin\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-09-12 03:26:54 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SELECT Year(submit_date) = '2022'
+ORDER BY `abs_id` DESC' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `abstrak`.`abs_id`, `id_scope`, `judul`, `abstrak`, `penulis`, `afiliasi`, `presenter`, `keyword`, `status`, `scope`
+FROM `abstrak`
+JOIN `scope` ON `scope`.`id_scope`=`abstrak`.`id_scope`
+WHERE SELECT Year(submit_date) = \'2022\'
+ORDER BY `abs_id` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `abstrak`.`abs_id`, `id_scope`, `judul`, `abstrak`, `penulis`, `afiliasi`, `presenter`, `keyword`, `status`, `scope`
+FROM `abstrak`
+JOIN `scope` ON `scope`.`id_scope`=`abstrak`.`id_scope`
+WHERE SELECT Year(submit_date) = \'2022\'
+ORDER BY `abs_id` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `abstrak`.`abs_id`, `id_scope`, `judul`, `abstrak`, `penulis`, `afiliasi`, `presenter`, `keyword`, `status`, `scope`
+FROM `abstrak`
+JOIN `scope` ON `scope`.`id_scope`=`abstrak`.`id_scope`
+WHERE SELECT Year(submit_date) = \'2022\'
+ORDER BY `abs_id` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `abstrak`.`abs_id`, `id_scope`, `judul`, `abstrak`, `penulis`, `afiliasi`, `presenter`, `keyword`, `status`, `scope`
+FROM `abstrak`
+JOIN `scope` ON `scope`.`id_scope`=`abstrak`.`id_scope`
+WHERE SELECT Year(submit_date) = :SELECT Year(submit_date):
+ORDER BY `abs_id` DESC', [...], false)
+ 5 SYSTEMPATH\Model.php(771): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Admin.php(63): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->abstrak()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-09-12 03:27:13 --> mysqli_sql_exception: Column 'id_scope' in field list is ambiguous in C:\xampp\htdocs\isceeradmin\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\isceeradmin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `abstrak...', 0)
+#1 C:\xampp\htdocs\isceeradmin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `abstrak...')
+#2 C:\xampp\htdocs\isceeradmin\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `abstrak...')
+#3 C:\xampp\htdocs\isceeradmin\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `abstrak...', Array, false)
+#4 C:\xampp\htdocs\isceeradmin\system\Model.php(771): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\isceeradmin\app\Controllers\Admin.php(63): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(904): App\Controllers\Admin->abstrak()
+#7 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\isceeradmin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\isceeradmin\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-09-12 03:27:13 --> Column 'id_scope' in field list is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `abstrak`.`abs_id`, `id_scope`, `judul`, `abstrak`, `penulis`, `afiliasi`, `presenter`, `keyword`, `status`, `scope`
+FROM `abstrak`
+JOIN `scope` ON `scope`.`id_scope`=`abstrak`.`id_scope`
+WHERE `submit_date` = \'2022\'
+ORDER BY `abs_id` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `abstrak`.`abs_id`, `id_scope`, `judul`, `abstrak`, `penulis`, `afiliasi`, `presenter`, `keyword`, `status`, `scope`
+FROM `abstrak`
+JOIN `scope` ON `scope`.`id_scope`=`abstrak`.`id_scope`
+WHERE `submit_date` = \'2022\'
+ORDER BY `abs_id` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `abstrak`.`abs_id`, `id_scope`, `judul`, `abstrak`, `penulis`, `afiliasi`, `presenter`, `keyword`, `status`, `scope`
+FROM `abstrak`
+JOIN `scope` ON `scope`.`id_scope`=`abstrak`.`id_scope`
+WHERE `submit_date` = \'2022\'
+ORDER BY `abs_id` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `abstrak`.`abs_id`, `id_scope`, `judul`, `abstrak`, `penulis`, `afiliasi`, `presenter`, `keyword`, `status`, `scope`
+FROM `abstrak`
+JOIN `scope` ON `scope`.`id_scope`=`abstrak`.`id_scope`
+WHERE `submit_date` = :submit_date:
+ORDER BY `abs_id` DESC', [...], false)
+ 5 SYSTEMPATH\Model.php(771): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Admin.php(63): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->abstrak()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-12 03:27:21 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::pagination()
+in APPPATH\Controllers\Admin.php on line 67.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->abstrak()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-12 03:27:27 --> Undefined property: CodeIgniter\Database\MySQLi\Result::$pager
+in APPPATH\Controllers\Admin.php on line 68.
+ 1 APPPATH\Controllers\Admin.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\Database\\MySQLi\\Result::$pager', 'APPPATH\\Controllers\\Admin.php', 68)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->abstrak()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-12 03:27:34 --> Cannot use object of type mysqli as array
+in APPPATH\Views\admin\abstrak.php on line 44.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/abstrak', [], true)
+ 4 APPPATH\Controllers\Admin.php(71): view('admin/abstrak', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->abstrak()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-12 20:07:31 --> Cannot use object of type mysqli as array
+in APPPATH\Views\admin\abstrak.php on line 44.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/abstrak', [], true)
+ 4 APPPATH\Controllers\Admin.php(71): view('admin/abstrak', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->abstrak()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-12 20:10:12 --> Call to undefined method App\Models\AbstrakModel::pagination
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\Admin.php(56): CodeIgniter\Model->__call('pagination', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->abstrak()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-12 20:11:47 --> Call to undefined method App\Models\AbstrakModel::pagination
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\Admin.php(56): CodeIgniter\Model->__call('pagination', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->abstrak()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-12 20:11:49 --> Call to undefined method App\Models\AbstrakModel::pagination
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\Admin.php(56): CodeIgniter\Model->__call('pagination', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->abstrak()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-12 20:11:49 --> Call to undefined method App\Models\AbstrakModel::pagination
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\Admin.php(56): CodeIgniter\Model->__call('pagination', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->abstrak()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-09-12 20:12:19 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`abs_id`, `id_payment`, `payment_proof`, `transfer_date`, `transfer_time`, `...' at line 1 in C:\xampp\htdocs\isceeradmin\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\isceeradmin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `SELECT`...', 0)
+#1 C:\xampp\htdocs\isceeradmin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `SELECT`...')
+#2 C:\xampp\htdocs\isceeradmin\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `SELECT`...')
+#3 C:\xampp\htdocs\isceeradmin\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `SELECT`...', Array, false)
+#4 C:\xampp\htdocs\isceeradmin\system\Model.php(771): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\isceeradmin\app\Controllers\Admin.php(56): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(904): App\Controllers\Admin->abstrak()
+#7 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\isceeradmin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\isceeradmin\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-09-12 20:12:19 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`abs_id`, `id_payment`, `payment_proof`, `transfer_date`, `transfer_time`, `...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `SELECT` `abstrak`.`abs_id`, `id_payment`, `payment_proof`, `transfer_date`, `transfer_time`, `bank_name`, `account_name`, `account_number`, `amount`, `payment_status`, `file_rp`, `judul`, `penulis`, `poster`, `created_at`, `last_update`, `status_poster`, `submit_poster`, `update_poster`, `afiliasi`, `abstrak`.`id_scope`, `scope`, `created_payment`, `update_payment`, `keyword`, `abstrak`, `presenter`, `decision`, `decision_revised`, `created_revised`, `last_revised`, `notes`, `notes_revised`, `user`.`id_user`, `nama`, `abstrak`.`status`, `submit_date`, `uniqid`, `paper_id`, `file_fp`, update_date FROM abstrak join scope on scope.id_scope=abstrak.id_scope join user on user.id_user=abstrak.id_user
+        inner join full_paper on abstrak.abs_id=full_paper.abs_id inner join payment on abstrak.abs_id=payment.abs_id inner join revised_paper on revised_paper.abs_id=abstrak.abs_id
+        inner join poster on poster.abs_id=abstrak.abs_id where YEAR(submit_date) = \'2022\' order by abstrak.abs_id ASC
+FROM `abstrak`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `SELECT` `abstrak`.`abs_id`, `id_payment`, `payment_proof`, `transfer_date`, `transfer_time`, `bank_name`, `account_name`, `account_number`, `amount`, `payment_status`, `file_rp`, `judul`, `penulis`, `poster`, `created_at`, `last_update`, `status_poster`, `submit_poster`, `update_poster`, `afiliasi`, `abstrak`.`id_scope`, `scope`, `created_payment`, `update_payment`, `keyword`, `abstrak`, `presenter`, `decision`, `decision_revised`, `created_revised`, `last_revised`, `notes`, `notes_revised`, `user`.`id_user`, `nama`, `abstrak`.`status`, `submit_date`, `uniqid`, `paper_id`, `file_fp`, update_date FROM abstrak join scope on scope.id_scope=abstrak.id_scope join user on user.id_user=abstrak.id_user
+        inner join full_paper on abstrak.abs_id=full_paper.abs_id inner join payment on abstrak.abs_id=payment.abs_id inner join revised_paper on revised_paper.abs_id=abstrak.abs_id
+        inner join poster on poster.abs_id=abstrak.abs_id where YEAR(submit_date) = \'2022\' order by abstrak.abs_id ASC
+FROM `abstrak`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `SELECT` `abstrak`.`abs_id`, `id_payment`, `payment_proof`, `transfer_date`, `transfer_time`, `bank_name`, `account_name`, `account_number`, `amount`, `payment_status`, `file_rp`, `judul`, `penulis`, `poster`, `created_at`, `last_update`, `status_poster`, `submit_poster`, `update_poster`, `afiliasi`, `abstrak`.`id_scope`, `scope`, `created_payment`, `update_payment`, `keyword`, `abstrak`, `presenter`, `decision`, `decision_revised`, `created_revised`, `last_revised`, `notes`, `notes_revised`, `user`.`id_user`, `nama`, `abstrak`.`status`, `submit_date`, `uniqid`, `paper_id`, `file_fp`, update_date FROM abstrak join scope on scope.id_scope=abstrak.id_scope join user on user.id_user=abstrak.id_user
+        inner join full_paper on abstrak.abs_id=full_paper.abs_id inner join payment on abstrak.abs_id=payment.abs_id inner join revised_paper on revised_paper.abs_id=abstrak.abs_id
+        inner join poster on poster.abs_id=abstrak.abs_id where YEAR(submit_date) = \'2022\' order by abstrak.abs_id ASC
+FROM `abstrak`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `SELECT` `abstrak`.`abs_id`, `id_payment`, `payment_proof`, `transfer_date`, `transfer_time`, `bank_name`, `account_name`, `account_number`, `amount`, `payment_status`, `file_rp`, `judul`, `penulis`, `poster`, `created_at`, `last_update`, `status_poster`, `submit_poster`, `update_poster`, `afiliasi`, `abstrak`.`id_scope`, `scope`, `created_payment`, `update_payment`, `keyword`, `abstrak`, `presenter`, `decision`, `decision_revised`, `created_revised`, `last_revised`, `notes`, `notes_revised`, `user`.`id_user`, `nama`, `abstrak`.`status`, `submit_date`, `uniqid`, `paper_id`, `file_fp`, update_date FROM abstrak join scope on scope.id_scope=abstrak.id_scope join user on user.id_user=abstrak.id_user
+        inner join full_paper on abstrak.abs_id=full_paper.abs_id inner join payment on abstrak.abs_id=payment.abs_id inner join revised_paper on revised_paper.abs_id=abstrak.abs_id
+        inner join poster on poster.abs_id=abstrak.abs_id where YEAR(submit_date) = \'2022\' order by abstrak.abs_id ASC
+FROM `abstrak`', [], false)
+ 5 SYSTEMPATH\Model.php(771): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Admin.php(56): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->abstrak()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-12 20:14:26 --> Cannot use object of type mysqli as array
+in APPPATH\Views\admin\abstrak.php on line 44.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/abstrak', [], true)
+ 4 APPPATH\Controllers\Admin.php(71): view('admin/abstrak', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->abstrak()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-12 20:15:11 --> Call to a member function pagination() on array
+in APPPATH\Controllers\Admin.php on line 67.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->abstrak()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-12 20:18:22 --> Call to undefined method App\Models\AbstrakModel::getAll
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\Admin.php(63): CodeIgniter\Model->__call('getAll', [])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->abstrak()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-12 20:18:51 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::getAll()
+in APPPATH\Controllers\Admin.php on line 63.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->abstrak()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-12 20:19:29 --> Call to a member function pagination() on array
+in APPPATH\Controllers\Admin.php on line 67.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->abstrak()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-12 20:24:29 --> Call to undefined method App\Models\AbstrakModel::pagination
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\Admin.php(67): CodeIgniter\Model->__call('pagination', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->abstrak()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-12 20:24:50 --> Call to undefined method App\Models\AbstrakModel::pagination
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\Admin.php(67): CodeIgniter\Model->__call('pagination', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->abstrak()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-12 20:25:06 --> Call to a member function pagination() on array
+in APPPATH\Controllers\Admin.php on line 67.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->abstrak()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-12 20:28:41 --> Call to a member function paginate() on array
+in APPPATH\Controllers\Admin.php on line 67.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->abstrak()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-12 20:28:42 --> Call to a member function paginate() on array
+in APPPATH\Controllers\Admin.php on line 67.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->abstrak()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-12 20:28:43 --> Call to a member function paginate() on array
+in APPPATH\Controllers\Admin.php on line 67.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->abstrak()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-12 20:33:56 --> Call to a member function paginate() on array
+in APPPATH\Controllers\Admin.php on line 67.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->abstrak()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-12 20:34:04 --> Call to a member function paginate() on array
+in APPPATH\Controllers\Admin.php on line 67.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->abstrak()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-12 20:34:51 --> Attempt to read property "pager" on array
+in APPPATH\Controllers\Admin.php on line 68.
+ 1 APPPATH\Controllers\Admin.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "pager" on array', 'APPPATH\\Controllers\\Admin.php', 68)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->abstrak()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-12 22:01:44 --> Undefined array key "scope"
+in APPPATH\Views\admin\abstrak.php on line 61.
+ 1 APPPATH\Views\admin\abstrak.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "scope"', 'APPPATH\\Views\\admin\\abstrak.php', 61)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\abstrak.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/abstrak', [], true)
+ 5 APPPATH\Controllers\Admin.php(83): view('admin/abstrak', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->abstrak()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-12 22:05:22 --> Call to undefined method App\Models\AbstrakModel::or_like
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Models\AbstrakModel.php(21): CodeIgniter\Model->__call('or_like', [...])
+ 2 APPPATH\Controllers\Admin.php(53): App\Models\AbstrakModel->search('tree')
+ 3 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->abstrak()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-12 22:09:10 --> Undefined variable $keyword
+in APPPATH\Views\admin\abstrak.php on line 42.
+ 1 APPPATH\Views\admin\abstrak.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $keyword', 'APPPATH\\Views\\admin\\abstrak.php', 42)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\abstrak.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/abstrak', [], true)
+ 5 APPPATH\Controllers\Admin.php(83): view('admin/abstrak', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->abstrak()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-09-12 22:17:57 --> mysqli_sql_exception: Unknown column 'last_update' in 'field list' in C:\xampp\htdocs\isceeradmin\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\isceeradmin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `abstrak...', 0)
+#1 C:\xampp\htdocs\isceeradmin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `abstrak...')
+#2 C:\xampp\htdocs\isceeradmin\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `abstrak...')
+#3 C:\xampp\htdocs\isceeradmin\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `abstrak...', Array, false)
+#4 C:\xampp\htdocs\isceeradmin\system\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\isceeradmin\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(10, 0)
+#6 C:\xampp\htdocs\isceeradmin\system\BaseModel.php(1089): CodeIgniter\BaseModel->findAll(10, 0)
+#7 C:\xampp\htdocs\isceeradmin\app\Controllers\Admin.php(79): CodeIgniter\BaseModel->paginate(10, 'abstrak')
+#8 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(904): App\Controllers\Admin->abstrak()
+#9 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\isceeradmin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\isceeradmin\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2022-09-12 22:17:57 --> Unknown column 'last_update' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `abstrak`.`abs_id`, `abstrak`.`id_scope`, `judul`, `abstrak`, `penulis`, `afiliasi`, `presenter`, `keyword`, `status`, `scope`, `submit_date`, `last_update`
+FROM `abstrak`
+JOIN `scope` ON `scope`.`id_scope`=`abstrak`.`id_scope`
+WHERE YEAR(`submit_date`) = \'2022\'
+ORDER BY `abs_id` ASC
+ LIMIT 10', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `abstrak`.`abs_id`, `abstrak`.`id_scope`, `judul`, `abstrak`, `penulis`, `afiliasi`, `presenter`, `keyword`, `status`, `scope`, `submit_date`, `last_update`
+FROM `abstrak`
+JOIN `scope` ON `scope`.`id_scope`=`abstrak`.`id_scope`
+WHERE YEAR(`submit_date`) = \'2022\'
+ORDER BY `abs_id` ASC
+ LIMIT 10')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `abstrak`.`abs_id`, `abstrak`.`id_scope`, `judul`, `abstrak`, `penulis`, `afiliasi`, `presenter`, `keyword`, `status`, `scope`, `submit_date`, `last_update`
+FROM `abstrak`
+JOIN `scope` ON `scope`.`id_scope`=`abstrak`.`id_scope`
+WHERE YEAR(`submit_date`) = \'2022\'
+ORDER BY `abs_id` ASC
+ LIMIT 10')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `abstrak`.`abs_id`, `abstrak`.`id_scope`, `judul`, `abstrak`, `penulis`, `afiliasi`, `presenter`, `keyword`, `status`, `scope`, `submit_date`, `last_update`
+FROM `abstrak`
+JOIN `scope` ON `scope`.`id_scope`=`abstrak`.`id_scope`
+WHERE YEAR(`submit_date`) = :YEAR(`submit_date`):
+ORDER BY `abs_id` ASC
+ LIMIT 10', [...], false)
+ 5 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(10, 0)
+ 7 SYSTEMPATH\BaseModel.php(1089): CodeIgniter\BaseModel->findAll(10, 0)
+ 8 APPPATH\Controllers\Admin.php(79): CodeIgniter\BaseModel->paginate(10, 'abstrak')
+ 9 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->abstrak()
+10 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

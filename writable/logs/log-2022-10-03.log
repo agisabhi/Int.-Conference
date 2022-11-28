@@ -1,0 +1,40 @@
+CRITICAL - 2022-10-03 01:42:46 --> Undefined variable $year
+in APPPATH\Controllers\Admin.php on line 51.
+ 1 APPPATH\Controllers\Admin.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $year', 'APPPATH\\Controllers\\Admin.php', 51)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-03 01:43:23 --> Undefined variable $year
+in APPPATH\Controllers\Admin.php on line 51.
+ 1 APPPATH\Controllers\Admin.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $year', 'APPPATH\\Controllers\\Admin.php', 51)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-03 01:44:14 --> Undefined variable $year
+in APPPATH\Controllers\Admin.php on line 51.
+ 1 APPPATH\Controllers\Admin.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $year', 'APPPATH\\Controllers\\Admin.php', 51)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-03 01:44:26 --> Call to undefined method App\Models\UserModel::userTotal
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\Admin.php(51): CodeIgniter\Model->__call('userTotal', [])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-03 02:31:52 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::countAll()
+in APPPATH\Models\UserModel.php on line 21.
+ 1 APPPATH\Controllers\Admin.php(51): App\Models\UserModel->userTotal()
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

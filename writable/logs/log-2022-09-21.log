@@ -1,0 +1,224 @@
+ERROR - 2022-09-21 00:13:32 --> mysqli_sql_exception: Unknown column 'file_review' in 'field list' in C:\xampp\htdocs\isceeradmin\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\isceeradmin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT abstrak....', 0)
+#1 C:\xampp\htdocs\isceeradmin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT abstrak....')
+#2 C:\xampp\htdocs\isceeradmin\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT abstrak....')
+#3 C:\xampp\htdocs\isceeradmin\system\Model.php(767): CodeIgniter\Database\BaseConnection->query('SELECT abstrak....')
+#4 C:\xampp\htdocs\isceeradmin\app\Controllers\User.php(49): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(904): App\Controllers\User->index()
+#6 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\isceeradmin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\isceeradmin\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-09-21 00:13:32 --> Unknown column 'file_review' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT abstrak.abs_id, id_payment, file_review, review.notes as notrev, payment_proof, transfer_date, transfer_time, bank_name, account_name, account_number, amount, payment_status, file_rp, judul, penulis, poster, created_at, last_update, status_poster, submit_poster, update_poster, afiliasi, 
+        abstrak.id_scope, scope, created_payment, update_payment, keyword, abstrak, presenter, decision, decision_revised, created_revised, last_revised,  notes, notes_revised, user.id_user, nama, abstrak.status, submit_date, uniqid, paper_id, file_fp,
+        update_date FROM abstrak join scope on scope.id_scope=abstrak.id_scope join user on user.id_user=abstrak.id_user
+        inner join full_paper on abstrak.abs_id=full_paper.abs_id inner join payment on abstrak.abs_id=payment.abs_id inner join revised_paper on revised_paper.abs_id=abstrak.abs_id
+        inner join poster on poster.abs_id=abstrak.abs_id where abstrak.id_user = \'16\' AND YEAR(submit_date) = \'2022\' order by abstrak.abs_id ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT abstrak.abs_id, id_payment, file_review, review.notes as notrev, payment_proof, transfer_date, transfer_time, bank_name, account_name, account_number, amount, payment_status, file_rp, judul, penulis, poster, created_at, last_update, status_poster, submit_poster, update_poster, afiliasi, 
+        abstrak.id_scope, scope, created_payment, update_payment, keyword, abstrak, presenter, decision, decision_revised, created_revised, last_revised,  notes, notes_revised, user.id_user, nama, abstrak.status, submit_date, uniqid, paper_id, file_fp,
+        update_date FROM abstrak join scope on scope.id_scope=abstrak.id_scope join user on user.id_user=abstrak.id_user
+        inner join full_paper on abstrak.abs_id=full_paper.abs_id inner join payment on abstrak.abs_id=payment.abs_id inner join revised_paper on revised_paper.abs_id=abstrak.abs_id
+        inner join poster on poster.abs_id=abstrak.abs_id where abstrak.id_user = \'16\' AND YEAR(submit_date) = \'2022\' order by abstrak.abs_id ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT abstrak.abs_id, id_payment, file_review, review.notes as notrev, payment_proof, transfer_date, transfer_time, bank_name, account_name, account_number, amount, payment_status, file_rp, judul, penulis, poster, created_at, last_update, status_poster, submit_poster, update_poster, afiliasi, 
+        abstrak.id_scope, scope, created_payment, update_payment, keyword, abstrak, presenter, decision, decision_revised, created_revised, last_revised,  notes, notes_revised, user.id_user, nama, abstrak.status, submit_date, uniqid, paper_id, file_fp,
+        update_date FROM abstrak join scope on scope.id_scope=abstrak.id_scope join user on user.id_user=abstrak.id_user
+        inner join full_paper on abstrak.abs_id=full_paper.abs_id inner join payment on abstrak.abs_id=payment.abs_id inner join revised_paper on revised_paper.abs_id=abstrak.abs_id
+        inner join poster on poster.abs_id=abstrak.abs_id where abstrak.id_user = \'16\' AND YEAR(submit_date) = \'2022\' order by abstrak.abs_id ASC')
+ 4 SYSTEMPATH\Model.php(767): CodeIgniter\Database\BaseConnection->query('SELECT abstrak.abs_id, id_payment, file_review, review.notes as notrev, payment_proof, transfer_date, transfer_time, bank_name, account_name, account_number, amount, payment_status, file_rp, judul, penulis, poster, created_at, last_update, status_poster, submit_poster, update_poster, afiliasi, 
+        abstrak.id_scope, scope, created_payment, update_payment, keyword, abstrak, presenter, decision, decision_revised, created_revised, last_revised,  notes, notes_revised, user.id_user, nama, abstrak.status, submit_date, uniqid, paper_id, file_fp,
+        update_date FROM abstrak join scope on scope.id_scope=abstrak.id_scope join user on user.id_user=abstrak.id_user
+        inner join full_paper on abstrak.abs_id=full_paper.abs_id inner join payment on abstrak.abs_id=payment.abs_id inner join revised_paper on revised_paper.abs_id=abstrak.abs_id
+        inner join poster on poster.abs_id=abstrak.abs_id where abstrak.id_user = \'16\' AND YEAR(submit_date) = \'2022\' order by abstrak.abs_id ASC')
+ 5 APPPATH\Controllers\User.php(49): CodeIgniter\Model->__call('query', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\User->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-09-21 00:17:39 --> mysqli_sql_exception: Column 'notes' in field list is ambiguous in C:\xampp\htdocs\isceeradmin\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\isceeradmin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT abstrak....', 0)
+#1 C:\xampp\htdocs\isceeradmin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT abstrak....')
+#2 C:\xampp\htdocs\isceeradmin\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT abstrak....')
+#3 C:\xampp\htdocs\isceeradmin\system\Model.php(767): CodeIgniter\Database\BaseConnection->query('SELECT abstrak....')
+#4 C:\xampp\htdocs\isceeradmin\app\Controllers\User.php(49): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(904): App\Controllers\User->index()
+#6 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\isceeradmin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\isceeradmin\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-09-21 00:17:39 --> Column 'notes' in field list is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT abstrak.abs_id, id_payment, file_review, review.notes as notrev, payment_proof, transfer_date, transfer_time, bank_name, account_name, account_number, amount, payment_status, file_rp, judul, penulis, poster, created_at, last_update, status_poster, submit_poster, update_poster, afiliasi, 
+        abstrak.id_scope, scope, created_payment, update_payment, keyword, abstrak, presenter, decision, decision_revised, created_revised, last_revised,  notes, notes_revised, user.id_user, nama, abstrak.status, submit_date, uniqid, paper_id, file_fp,
+        update_date FROM abstrak join scope on scope.id_scope=abstrak.id_scope join user on user.id_user=abstrak.id_user
+        inner join full_paper on abstrak.abs_id=full_paper.abs_id inner join payment on abstrak.abs_id=payment.abs_id inner join revised_paper on revised_paper.abs_id=abstrak.abs_id
+        inner join reviewer on reviewer.id_user=user.id_user inner join review on review.id_reviewer=reviewer.id_reviewer inner join poster on poster.abs_id=abstrak.abs_id where abstrak.id_user = \'16\' AND YEAR(submit_date) = \'2022\' order by abstrak.abs_id ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT abstrak.abs_id, id_payment, file_review, review.notes as notrev, payment_proof, transfer_date, transfer_time, bank_name, account_name, account_number, amount, payment_status, file_rp, judul, penulis, poster, created_at, last_update, status_poster, submit_poster, update_poster, afiliasi, 
+        abstrak.id_scope, scope, created_payment, update_payment, keyword, abstrak, presenter, decision, decision_revised, created_revised, last_revised,  notes, notes_revised, user.id_user, nama, abstrak.status, submit_date, uniqid, paper_id, file_fp,
+        update_date FROM abstrak join scope on scope.id_scope=abstrak.id_scope join user on user.id_user=abstrak.id_user
+        inner join full_paper on abstrak.abs_id=full_paper.abs_id inner join payment on abstrak.abs_id=payment.abs_id inner join revised_paper on revised_paper.abs_id=abstrak.abs_id
+        inner join reviewer on reviewer.id_user=user.id_user inner join review on review.id_reviewer=reviewer.id_reviewer inner join poster on poster.abs_id=abstrak.abs_id where abstrak.id_user = \'16\' AND YEAR(submit_date) = \'2022\' order by abstrak.abs_id ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT abstrak.abs_id, id_payment, file_review, review.notes as notrev, payment_proof, transfer_date, transfer_time, bank_name, account_name, account_number, amount, payment_status, file_rp, judul, penulis, poster, created_at, last_update, status_poster, submit_poster, update_poster, afiliasi, 
+        abstrak.id_scope, scope, created_payment, update_payment, keyword, abstrak, presenter, decision, decision_revised, created_revised, last_revised,  notes, notes_revised, user.id_user, nama, abstrak.status, submit_date, uniqid, paper_id, file_fp,
+        update_date FROM abstrak join scope on scope.id_scope=abstrak.id_scope join user on user.id_user=abstrak.id_user
+        inner join full_paper on abstrak.abs_id=full_paper.abs_id inner join payment on abstrak.abs_id=payment.abs_id inner join revised_paper on revised_paper.abs_id=abstrak.abs_id
+        inner join reviewer on reviewer.id_user=user.id_user inner join review on review.id_reviewer=reviewer.id_reviewer inner join poster on poster.abs_id=abstrak.abs_id where abstrak.id_user = \'16\' AND YEAR(submit_date) = \'2022\' order by abstrak.abs_id ASC')
+ 4 SYSTEMPATH\Model.php(767): CodeIgniter\Database\BaseConnection->query('SELECT abstrak.abs_id, id_payment, file_review, review.notes as notrev, payment_proof, transfer_date, transfer_time, bank_name, account_name, account_number, amount, payment_status, file_rp, judul, penulis, poster, created_at, last_update, status_poster, submit_poster, update_poster, afiliasi, 
+        abstrak.id_scope, scope, created_payment, update_payment, keyword, abstrak, presenter, decision, decision_revised, created_revised, last_revised,  notes, notes_revised, user.id_user, nama, abstrak.status, submit_date, uniqid, paper_id, file_fp,
+        update_date FROM abstrak join scope on scope.id_scope=abstrak.id_scope join user on user.id_user=abstrak.id_user
+        inner join full_paper on abstrak.abs_id=full_paper.abs_id inner join payment on abstrak.abs_id=payment.abs_id inner join revised_paper on revised_paper.abs_id=abstrak.abs_id
+        inner join reviewer on reviewer.id_user=user.id_user inner join review on review.id_reviewer=reviewer.id_reviewer inner join poster on poster.abs_id=abstrak.abs_id where abstrak.id_user = \'16\' AND YEAR(submit_date) = \'2022\' order by abstrak.abs_id ASC')
+ 5 APPPATH\Controllers\User.php(49): CodeIgniter\Model->__call('query', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\User->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-09-21 00:17:41 --> mysqli_sql_exception: Column 'notes' in field list is ambiguous in C:\xampp\htdocs\isceeradmin\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\isceeradmin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT abstrak....', 0)
+#1 C:\xampp\htdocs\isceeradmin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT abstrak....')
+#2 C:\xampp\htdocs\isceeradmin\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT abstrak....')
+#3 C:\xampp\htdocs\isceeradmin\system\Model.php(767): CodeIgniter\Database\BaseConnection->query('SELECT abstrak....')
+#4 C:\xampp\htdocs\isceeradmin\app\Controllers\User.php(49): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(904): App\Controllers\User->index()
+#6 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\isceeradmin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\isceeradmin\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-09-21 00:17:41 --> Column 'notes' in field list is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT abstrak.abs_id, id_payment, file_review, review.notes as notrev, payment_proof, transfer_date, transfer_time, bank_name, account_name, account_number, amount, payment_status, file_rp, judul, penulis, poster, created_at, last_update, status_poster, submit_poster, update_poster, afiliasi, 
+        abstrak.id_scope, scope, created_payment, update_payment, keyword, abstrak, presenter, decision, decision_revised, created_revised, last_revised,  notes, notes_revised, user.id_user, nama, abstrak.status, submit_date, uniqid, paper_id, file_fp,
+        update_date FROM abstrak join scope on scope.id_scope=abstrak.id_scope join user on user.id_user=abstrak.id_user
+        inner join full_paper on abstrak.abs_id=full_paper.abs_id inner join payment on abstrak.abs_id=payment.abs_id inner join revised_paper on revised_paper.abs_id=abstrak.abs_id
+        inner join reviewer on reviewer.id_user=user.id_user inner join review on review.id_reviewer=reviewer.id_reviewer inner join poster on poster.abs_id=abstrak.abs_id where abstrak.id_user = \'16\' AND YEAR(submit_date) = \'2022\' order by abstrak.abs_id ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT abstrak.abs_id, id_payment, file_review, review.notes as notrev, payment_proof, transfer_date, transfer_time, bank_name, account_name, account_number, amount, payment_status, file_rp, judul, penulis, poster, created_at, last_update, status_poster, submit_poster, update_poster, afiliasi, 
+        abstrak.id_scope, scope, created_payment, update_payment, keyword, abstrak, presenter, decision, decision_revised, created_revised, last_revised,  notes, notes_revised, user.id_user, nama, abstrak.status, submit_date, uniqid, paper_id, file_fp,
+        update_date FROM abstrak join scope on scope.id_scope=abstrak.id_scope join user on user.id_user=abstrak.id_user
+        inner join full_paper on abstrak.abs_id=full_paper.abs_id inner join payment on abstrak.abs_id=payment.abs_id inner join revised_paper on revised_paper.abs_id=abstrak.abs_id
+        inner join reviewer on reviewer.id_user=user.id_user inner join review on review.id_reviewer=reviewer.id_reviewer inner join poster on poster.abs_id=abstrak.abs_id where abstrak.id_user = \'16\' AND YEAR(submit_date) = \'2022\' order by abstrak.abs_id ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT abstrak.abs_id, id_payment, file_review, review.notes as notrev, payment_proof, transfer_date, transfer_time, bank_name, account_name, account_number, amount, payment_status, file_rp, judul, penulis, poster, created_at, last_update, status_poster, submit_poster, update_poster, afiliasi, 
+        abstrak.id_scope, scope, created_payment, update_payment, keyword, abstrak, presenter, decision, decision_revised, created_revised, last_revised,  notes, notes_revised, user.id_user, nama, abstrak.status, submit_date, uniqid, paper_id, file_fp,
+        update_date FROM abstrak join scope on scope.id_scope=abstrak.id_scope join user on user.id_user=abstrak.id_user
+        inner join full_paper on abstrak.abs_id=full_paper.abs_id inner join payment on abstrak.abs_id=payment.abs_id inner join revised_paper on revised_paper.abs_id=abstrak.abs_id
+        inner join reviewer on reviewer.id_user=user.id_user inner join review on review.id_reviewer=reviewer.id_reviewer inner join poster on poster.abs_id=abstrak.abs_id where abstrak.id_user = \'16\' AND YEAR(submit_date) = \'2022\' order by abstrak.abs_id ASC')
+ 4 SYSTEMPATH\Model.php(767): CodeIgniter\Database\BaseConnection->query('SELECT abstrak.abs_id, id_payment, file_review, review.notes as notrev, payment_proof, transfer_date, transfer_time, bank_name, account_name, account_number, amount, payment_status, file_rp, judul, penulis, poster, created_at, last_update, status_poster, submit_poster, update_poster, afiliasi, 
+        abstrak.id_scope, scope, created_payment, update_payment, keyword, abstrak, presenter, decision, decision_revised, created_revised, last_revised,  notes, notes_revised, user.id_user, nama, abstrak.status, submit_date, uniqid, paper_id, file_fp,
+        update_date FROM abstrak join scope on scope.id_scope=abstrak.id_scope join user on user.id_user=abstrak.id_user
+        inner join full_paper on abstrak.abs_id=full_paper.abs_id inner join payment on abstrak.abs_id=payment.abs_id inner join revised_paper on revised_paper.abs_id=abstrak.abs_id
+        inner join reviewer on reviewer.id_user=user.id_user inner join review on review.id_reviewer=reviewer.id_reviewer inner join poster on poster.abs_id=abstrak.abs_id where abstrak.id_user = \'16\' AND YEAR(submit_date) = \'2022\' order by abstrak.abs_id ASC')
+ 5 APPPATH\Controllers\User.php(49): CodeIgniter\Model->__call('query', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\User->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-09-21 00:17:55 --> mysqli_sql_exception: Unknown column 'reviewer.id_reviewer' in 'on clause' in C:\xampp\htdocs\isceeradmin\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\isceeradmin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT abstrak....', 0)
+#1 C:\xampp\htdocs\isceeradmin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT abstrak....')
+#2 C:\xampp\htdocs\isceeradmin\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT abstrak....')
+#3 C:\xampp\htdocs\isceeradmin\system\Model.php(767): CodeIgniter\Database\BaseConnection->query('SELECT abstrak....')
+#4 C:\xampp\htdocs\isceeradmin\app\Controllers\User.php(49): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(904): App\Controllers\User->index()
+#6 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\isceeradmin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\isceeradmin\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-09-21 00:17:55 --> Unknown column 'reviewer.id_reviewer' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT abstrak.abs_id, id_payment, file_review, review.notes as notrev, payment_proof, transfer_date, transfer_time, bank_name, account_name, account_number, amount, payment_status, file_rp, judul, penulis, poster, created_at, last_update, status_poster, submit_poster, update_poster, afiliasi, 
+        abstrak.id_scope, scope, created_payment, update_payment, keyword, abstrak, presenter, decision, decision_revised, created_revised, last_revised,  full_paper.notes, notes_revised, user.id_user, nama, abstrak.status, submit_date, uniqid, paper_id, file_fp,
+        update_date FROM abstrak join scope on scope.id_scope=abstrak.id_scope join user on user.id_user=abstrak.id_user
+        inner join full_paper on abstrak.abs_id=full_paper.abs_id inner join payment on abstrak.abs_id=payment.abs_id inner join revised_paper on revised_paper.abs_id=abstrak.abs_id
+        inner join reviewer on reviewer.id_user=user.id_user inner join review on review.id_reviewer=reviewer.id_reviewer inner join poster on poster.abs_id=abstrak.abs_id where abstrak.id_user = \'16\' AND YEAR(submit_date) = \'2022\' order by abstrak.abs_id ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT abstrak.abs_id, id_payment, file_review, review.notes as notrev, payment_proof, transfer_date, transfer_time, bank_name, account_name, account_number, amount, payment_status, file_rp, judul, penulis, poster, created_at, last_update, status_poster, submit_poster, update_poster, afiliasi, 
+        abstrak.id_scope, scope, created_payment, update_payment, keyword, abstrak, presenter, decision, decision_revised, created_revised, last_revised,  full_paper.notes, notes_revised, user.id_user, nama, abstrak.status, submit_date, uniqid, paper_id, file_fp,
+        update_date FROM abstrak join scope on scope.id_scope=abstrak.id_scope join user on user.id_user=abstrak.id_user
+        inner join full_paper on abstrak.abs_id=full_paper.abs_id inner join payment on abstrak.abs_id=payment.abs_id inner join revised_paper on revised_paper.abs_id=abstrak.abs_id
+        inner join reviewer on reviewer.id_user=user.id_user inner join review on review.id_reviewer=reviewer.id_reviewer inner join poster on poster.abs_id=abstrak.abs_id where abstrak.id_user = \'16\' AND YEAR(submit_date) = \'2022\' order by abstrak.abs_id ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT abstrak.abs_id, id_payment, file_review, review.notes as notrev, payment_proof, transfer_date, transfer_time, bank_name, account_name, account_number, amount, payment_status, file_rp, judul, penulis, poster, created_at, last_update, status_poster, submit_poster, update_poster, afiliasi, 
+        abstrak.id_scope, scope, created_payment, update_payment, keyword, abstrak, presenter, decision, decision_revised, created_revised, last_revised,  full_paper.notes, notes_revised, user.id_user, nama, abstrak.status, submit_date, uniqid, paper_id, file_fp,
+        update_date FROM abstrak join scope on scope.id_scope=abstrak.id_scope join user on user.id_user=abstrak.id_user
+        inner join full_paper on abstrak.abs_id=full_paper.abs_id inner join payment on abstrak.abs_id=payment.abs_id inner join revised_paper on revised_paper.abs_id=abstrak.abs_id
+        inner join reviewer on reviewer.id_user=user.id_user inner join review on review.id_reviewer=reviewer.id_reviewer inner join poster on poster.abs_id=abstrak.abs_id where abstrak.id_user = \'16\' AND YEAR(submit_date) = \'2022\' order by abstrak.abs_id ASC')
+ 4 SYSTEMPATH\Model.php(767): CodeIgniter\Database\BaseConnection->query('SELECT abstrak.abs_id, id_payment, file_review, review.notes as notrev, payment_proof, transfer_date, transfer_time, bank_name, account_name, account_number, amount, payment_status, file_rp, judul, penulis, poster, created_at, last_update, status_poster, submit_poster, update_poster, afiliasi, 
+        abstrak.id_scope, scope, created_payment, update_payment, keyword, abstrak, presenter, decision, decision_revised, created_revised, last_revised,  full_paper.notes, notes_revised, user.id_user, nama, abstrak.status, submit_date, uniqid, paper_id, file_fp,
+        update_date FROM abstrak join scope on scope.id_scope=abstrak.id_scope join user on user.id_user=abstrak.id_user
+        inner join full_paper on abstrak.abs_id=full_paper.abs_id inner join payment on abstrak.abs_id=payment.abs_id inner join revised_paper on revised_paper.abs_id=abstrak.abs_id
+        inner join reviewer on reviewer.id_user=user.id_user inner join review on review.id_reviewer=reviewer.id_reviewer inner join poster on poster.abs_id=abstrak.abs_id where abstrak.id_user = \'16\' AND YEAR(submit_date) = \'2022\' order by abstrak.abs_id ASC')
+ 5 APPPATH\Controllers\User.php(49): CodeIgniter\Model->__call('query', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\User->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-21 01:02:41 --> Undefined array key "notrev"
+in APPPATH\Views\user\index.php on line 229.
+ 1 APPPATH\Views\user\index.php(229): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "notrev"', 'APPPATH\\Views\\user\\index.php', 229)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('user/index', [], true)
+ 5 APPPATH\Controllers\User.php(58): view('user/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\User->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-21 01:07:03 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::getCount()
+in APPPATH\Controllers\User.php on line 50.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\User->index()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-21 01:07:40 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::get()
+in APPPATH\Controllers\User.php on line 50.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\User->index()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-21 01:07:50 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::countAllResults()
+in APPPATH\Controllers\User.php on line 50.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\User->index()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-21 01:19:01 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\User.php on line 335.
+ 1 APPPATH\Controllers\User.php(335): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\User.php', 335)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\User->download_review('Review_ABS-1_1663733905_3d3410cb3d4aa3eccab3.doc')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-21 01:21:00 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\User.php on line 335.
+ 1 APPPATH\Controllers\User.php(335): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\User.php', 335)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\User->download_review('Review_ABS-1_1663733905_3d3410cb3d4aa3eccab3.doc')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-21 01:22:50 --> File not found: review/
+in SYSTEMPATH\Files\File.php on line 46.
+ 1 SYSTEMPATH\Files\File.php(46): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound('FCPATH\\review')
+ 2 SYSTEMPATH\HTTP\DownloadResponse.php(97): CodeIgniter\Files\File->__construct('FCPATH\\review', true)
+ 3 SYSTEMPATH\HTTP\ResponseTrait.php(781): CodeIgniter\HTTP\DownloadResponse->setFilePath('FCPATH\\review')
+ 4 APPPATH\Controllers\User.php(335): CodeIgniter\HTTP\Response->download('ROOTPATH\\public', null)
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\User->download_review('ABS-4')
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

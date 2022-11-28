@@ -1,0 +1,394 @@
+ERROR - 2022-10-04 20:05:40 --> mysqli_sql_exception: Unknown column 'abs.id_user' in 'on clause' in C:\xampp\htdocs\isceeradmin\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\isceeradmin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\isceeradmin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\isceeradmin\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\isceeradmin\system\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\isceeradmin\system\Model.php(550): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 C:\xampp\htdocs\isceeradmin\app\Models\AbstrakModel.php(107): CodeIgniter\Model->countAllResults()
+#6 C:\xampp\htdocs\isceeradmin\app\Controllers\Admin.php(61): App\Models\AbstrakModel->abs_total('2022')
+#7 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(904): App\Controllers\Admin->index()
+#8 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#9 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\isceeradmin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\isceeradmin\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2022-10-04 20:05:40 --> Unknown column 'abs.id_user' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `abstrak`
+JOIN `user` ON `user`.`id_user`=`abs`.`id_user`
+WHERE YEAR(submit_date) = \'2022\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `abstrak`
+JOIN `user` ON `user`.`id_user`=`abs`.`id_user`
+WHERE YEAR(submit_date) = \'2022\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `abstrak`
+JOIN `user` ON `user`.`id_user`=`abs`.`id_user`
+WHERE YEAR(submit_date) = \'2022\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `abstrak`
+JOIN `user` ON `user`.`id_user`=`abs`.`id_user`
+WHERE YEAR(submit_date) = :YEAR(submit_date):', [...], false)
+ 5 SYSTEMPATH\Model.php(550): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH\Models\AbstrakModel.php(107): CodeIgniter\Model->countAllResults()
+ 7 APPPATH\Controllers\Admin.php(61): App\Models\AbstrakModel->abs_total('2022')
+ 8 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->index()
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 20:18:14 --> Undefined variable $ful_non
+in APPPATH\Views\admin\index.php on line 89.
+ 1 APPPATH\Views\admin\index.php(89): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ful_non', 'APPPATH\\Views\\admin\\index.php', 89)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/index', [], true)
+ 5 APPPATH\Controllers\Admin.php(69): view('admin/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-10-04 20:30:00 --> mysqli_sql_exception: Unknown column 'full_paper.abs_id' in 'on clause' in C:\xampp\htdocs\isceeradmin\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\isceeradmin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\isceeradmin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\isceeradmin\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\isceeradmin\system\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\isceeradmin\system\Model.php(550): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 C:\xampp\htdocs\isceeradmin\app\Models\RevisedModel.php(351): CodeIgniter\Model->countAllResults()
+#6 C:\xampp\htdocs\isceeradmin\app\Controllers\Admin.php(67): App\Models\RevisedModel->revised_total('2022')
+#7 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(904): App\Controllers\Admin->index()
+#8 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#9 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\isceeradmin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\isceeradmin\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2022-10-04 20:30:00 --> Unknown column 'full_paper.abs_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `revised_paper`
+JOIN `abstrak` ON `abstrak`.`abs_id`=`full_paper`.`abs_id`
+JOIN `user` ON `user`.`id_user`=`abstrak`.`id_user`
+WHERE YEAR(created_revised) = \'2022\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `revised_paper`
+JOIN `abstrak` ON `abstrak`.`abs_id`=`full_paper`.`abs_id`
+JOIN `user` ON `user`.`id_user`=`abstrak`.`id_user`
+WHERE YEAR(created_revised) = \'2022\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `revised_paper`
+JOIN `abstrak` ON `abstrak`.`abs_id`=`full_paper`.`abs_id`
+JOIN `user` ON `user`.`id_user`=`abstrak`.`id_user`
+WHERE YEAR(created_revised) = \'2022\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `revised_paper`
+JOIN `abstrak` ON `abstrak`.`abs_id`=`full_paper`.`abs_id`
+JOIN `user` ON `user`.`id_user`=`abstrak`.`id_user`
+WHERE YEAR(created_revised) = :YEAR(created_revised):', [...], false)
+ 5 SYSTEMPATH\Model.php(550): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH\Models\RevisedModel.php(351): CodeIgniter\Model->countAllResults()
+ 7 APPPATH\Controllers\Admin.php(67): App\Models\RevisedModel->revised_total('2022')
+ 8 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->index()
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-10-04 21:49:13 --> mysqli_sql_exception: Unknown column 'nama' in 'field list' in C:\xampp\htdocs\isceeradmin\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\isceeradmin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `abstrak...', 0)
+#1 C:\xampp\htdocs\isceeradmin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `abstrak...')
+#2 C:\xampp\htdocs\isceeradmin\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `abstrak...')
+#3 C:\xampp\htdocs\isceeradmin\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `abstrak...', Array, false)
+#4 C:\xampp\htdocs\isceeradmin\system\Model.php(771): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\isceeradmin\app\Controllers\Admin.php(447): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(904): App\Controllers\Admin->DownloadAllMetadata()
+#7 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\isceeradmin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\isceeradmin\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-10-04 21:49:13 --> Unknown column 'nama' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `abstrak`.`abs_id`, `nama`, `institusi`, `email`, `phone`, `abstrak`.`judul`, `abstrak`.`penulis`, `abstrak`.`afiliasi`, `abstrak`.`abstrak`, `abstrak`.`status`, `abstrak`.`type`, `abstrak`.`keyword`, `abstrak`.`submit_date`, `abstrak`.`update_date`, `decision`, `decision_revised`, `status_poster`, `scope`
+FROM `abstrak`
+JOIN `scope` ON `scope`.`id_scope`=`abstrak`.`id_scope`
+JOIN `full_paper` ON `full_paper`.`abs_id`=`abstrak`.`abs_id`
+JOIN `revised_paper` ON `revised_paper`.`abs_id`=`abstrak`.`abs_id`
+JOIN `poster` ON `poster`.`abs_id`=`abstrak`.`abs_id`
+WHERE YEAR(`submit_date`) = \'2022\'
+AND `level` = \'user\'
+ORDER BY `abs_id` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `abstrak`.`abs_id`, `nama`, `institusi`, `email`, `phone`, `abstrak`.`judul`, `abstrak`.`penulis`, `abstrak`.`afiliasi`, `abstrak`.`abstrak`, `abstrak`.`status`, `abstrak`.`type`, `abstrak`.`keyword`, `abstrak`.`submit_date`, `abstrak`.`update_date`, `decision`, `decision_revised`, `status_poster`, `scope`
+FROM `abstrak`
+JOIN `scope` ON `scope`.`id_scope`=`abstrak`.`id_scope`
+JOIN `full_paper` ON `full_paper`.`abs_id`=`abstrak`.`abs_id`
+JOIN `revised_paper` ON `revised_paper`.`abs_id`=`abstrak`.`abs_id`
+JOIN `poster` ON `poster`.`abs_id`=`abstrak`.`abs_id`
+WHERE YEAR(`submit_date`) = \'2022\'
+AND `level` = \'user\'
+ORDER BY `abs_id` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `abstrak`.`abs_id`, `nama`, `institusi`, `email`, `phone`, `abstrak`.`judul`, `abstrak`.`penulis`, `abstrak`.`afiliasi`, `abstrak`.`abstrak`, `abstrak`.`status`, `abstrak`.`type`, `abstrak`.`keyword`, `abstrak`.`submit_date`, `abstrak`.`update_date`, `decision`, `decision_revised`, `status_poster`, `scope`
+FROM `abstrak`
+JOIN `scope` ON `scope`.`id_scope`=`abstrak`.`id_scope`
+JOIN `full_paper` ON `full_paper`.`abs_id`=`abstrak`.`abs_id`
+JOIN `revised_paper` ON `revised_paper`.`abs_id`=`abstrak`.`abs_id`
+JOIN `poster` ON `poster`.`abs_id`=`abstrak`.`abs_id`
+WHERE YEAR(`submit_date`) = \'2022\'
+AND `level` = \'user\'
+ORDER BY `abs_id` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `abstrak`.`abs_id`, `nama`, `institusi`, `email`, `phone`, `abstrak`.`judul`, `abstrak`.`penulis`, `abstrak`.`afiliasi`, `abstrak`.`abstrak`, `abstrak`.`status`, `abstrak`.`type`, `abstrak`.`keyword`, `abstrak`.`submit_date`, `abstrak`.`update_date`, `decision`, `decision_revised`, `status_poster`, `scope`
+FROM `abstrak`
+JOIN `scope` ON `scope`.`id_scope`=`abstrak`.`id_scope`
+JOIN `full_paper` ON `full_paper`.`abs_id`=`abstrak`.`abs_id`
+JOIN `revised_paper` ON `revised_paper`.`abs_id`=`abstrak`.`abs_id`
+JOIN `poster` ON `poster`.`abs_id`=`abstrak`.`abs_id`
+WHERE YEAR(`submit_date`) = :YEAR(`submit_date`):
+AND `level` = :level:
+ORDER BY `abs_id` ASC', [...], false)
+ 5 SYSTEMPATH\Model.php(771): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Admin.php(447): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->DownloadAllMetadata()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-10-04 21:52:02 --> mysqli_sql_exception: Unknown column 'nama' in 'field list' in C:\xampp\htdocs\isceeradmin\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\isceeradmin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `abstrak...', 0)
+#1 C:\xampp\htdocs\isceeradmin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `abstrak...')
+#2 C:\xampp\htdocs\isceeradmin\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `abstrak...')
+#3 C:\xampp\htdocs\isceeradmin\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `abstrak...', Array, false)
+#4 C:\xampp\htdocs\isceeradmin\system\Model.php(771): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\isceeradmin\app\Controllers\Admin.php(447): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(904): App\Controllers\Admin->DownloadAllMetadata()
+#7 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\isceeradmin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\isceeradmin\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-10-04 21:52:02 --> Unknown column 'nama' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `abstrak`.`abs_id`, `nama`, `institusi`, `email`, `phone`, `abstrak`.`judul`, `abstrak`.`penulis`, `abstrak`.`afiliasi`, `abstrak`.`abstrak`, `abstrak`.`status`, `abstrak`.`type`, `abstrak`.`keyword`, `abstrak`.`submit_date`, `abstrak`.`update_date`, `decision`, `decision_revised`, `status_poster`, `scope`
+FROM `abstrak`
+JOIN `scope` ON `scope`.`id_scope`=`abstrak`.`id_scope`
+JOIN `full_paper` ON `full_paper`.`abs_id`=`abstrak`.`abs_id`
+JOIN `revised_paper` ON `revised_paper`.`abs_id`=`abstrak`.`abs_id`
+JOIN `poster` ON `poster`.`abs_id`=`abstrak`.`abs_id`
+WHERE YEAR(`submit_date`) = \'2022\'
+AND `level` = \'user\'
+ORDER BY `abs_id` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `abstrak`.`abs_id`, `nama`, `institusi`, `email`, `phone`, `abstrak`.`judul`, `abstrak`.`penulis`, `abstrak`.`afiliasi`, `abstrak`.`abstrak`, `abstrak`.`status`, `abstrak`.`type`, `abstrak`.`keyword`, `abstrak`.`submit_date`, `abstrak`.`update_date`, `decision`, `decision_revised`, `status_poster`, `scope`
+FROM `abstrak`
+JOIN `scope` ON `scope`.`id_scope`=`abstrak`.`id_scope`
+JOIN `full_paper` ON `full_paper`.`abs_id`=`abstrak`.`abs_id`
+JOIN `revised_paper` ON `revised_paper`.`abs_id`=`abstrak`.`abs_id`
+JOIN `poster` ON `poster`.`abs_id`=`abstrak`.`abs_id`
+WHERE YEAR(`submit_date`) = \'2022\'
+AND `level` = \'user\'
+ORDER BY `abs_id` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `abstrak`.`abs_id`, `nama`, `institusi`, `email`, `phone`, `abstrak`.`judul`, `abstrak`.`penulis`, `abstrak`.`afiliasi`, `abstrak`.`abstrak`, `abstrak`.`status`, `abstrak`.`type`, `abstrak`.`keyword`, `abstrak`.`submit_date`, `abstrak`.`update_date`, `decision`, `decision_revised`, `status_poster`, `scope`
+FROM `abstrak`
+JOIN `scope` ON `scope`.`id_scope`=`abstrak`.`id_scope`
+JOIN `full_paper` ON `full_paper`.`abs_id`=`abstrak`.`abs_id`
+JOIN `revised_paper` ON `revised_paper`.`abs_id`=`abstrak`.`abs_id`
+JOIN `poster` ON `poster`.`abs_id`=`abstrak`.`abs_id`
+WHERE YEAR(`submit_date`) = \'2022\'
+AND `level` = \'user\'
+ORDER BY `abs_id` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `abstrak`.`abs_id`, `nama`, `institusi`, `email`, `phone`, `abstrak`.`judul`, `abstrak`.`penulis`, `abstrak`.`afiliasi`, `abstrak`.`abstrak`, `abstrak`.`status`, `abstrak`.`type`, `abstrak`.`keyword`, `abstrak`.`submit_date`, `abstrak`.`update_date`, `decision`, `decision_revised`, `status_poster`, `scope`
+FROM `abstrak`
+JOIN `scope` ON `scope`.`id_scope`=`abstrak`.`id_scope`
+JOIN `full_paper` ON `full_paper`.`abs_id`=`abstrak`.`abs_id`
+JOIN `revised_paper` ON `revised_paper`.`abs_id`=`abstrak`.`abs_id`
+JOIN `poster` ON `poster`.`abs_id`=`abstrak`.`abs_id`
+WHERE YEAR(`submit_date`) = :YEAR(`submit_date`):
+AND `level` = :level:
+ORDER BY `abs_id` ASC', [...], false)
+ 5 SYSTEMPATH\Model.php(771): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Admin.php(447): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->DownloadAllMetadata()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-10-04 21:52:12 --> mysqli_sql_exception: Unknown column 'user.nama' in 'field list' in C:\xampp\htdocs\isceeradmin\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\isceeradmin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `abstrak...', 0)
+#1 C:\xampp\htdocs\isceeradmin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `abstrak...')
+#2 C:\xampp\htdocs\isceeradmin\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `abstrak...')
+#3 C:\xampp\htdocs\isceeradmin\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `abstrak...', Array, false)
+#4 C:\xampp\htdocs\isceeradmin\system\Model.php(771): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\isceeradmin\app\Controllers\Admin.php(447): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(904): App\Controllers\Admin->DownloadAllMetadata()
+#7 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\isceeradmin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\isceeradmin\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-10-04 21:52:12 --> Unknown column 'user.nama' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `abstrak`.`abs_id`, `user`.`nama`, `institusi`, `email`, `phone`, `abstrak`.`judul`, `abstrak`.`penulis`, `abstrak`.`afiliasi`, `abstrak`.`abstrak`, `abstrak`.`status`, `abstrak`.`type`, `abstrak`.`keyword`, `abstrak`.`submit_date`, `abstrak`.`update_date`, `decision`, `decision_revised`, `status_poster`, `scope`
+FROM `abstrak`
+JOIN `scope` ON `scope`.`id_scope`=`abstrak`.`id_scope`
+JOIN `full_paper` ON `full_paper`.`abs_id`=`abstrak`.`abs_id`
+JOIN `revised_paper` ON `revised_paper`.`abs_id`=`abstrak`.`abs_id`
+JOIN `poster` ON `poster`.`abs_id`=`abstrak`.`abs_id`
+WHERE YEAR(`submit_date`) = \'2022\'
+AND `level` = \'user\'
+ORDER BY `abs_id` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `abstrak`.`abs_id`, `user`.`nama`, `institusi`, `email`, `phone`, `abstrak`.`judul`, `abstrak`.`penulis`, `abstrak`.`afiliasi`, `abstrak`.`abstrak`, `abstrak`.`status`, `abstrak`.`type`, `abstrak`.`keyword`, `abstrak`.`submit_date`, `abstrak`.`update_date`, `decision`, `decision_revised`, `status_poster`, `scope`
+FROM `abstrak`
+JOIN `scope` ON `scope`.`id_scope`=`abstrak`.`id_scope`
+JOIN `full_paper` ON `full_paper`.`abs_id`=`abstrak`.`abs_id`
+JOIN `revised_paper` ON `revised_paper`.`abs_id`=`abstrak`.`abs_id`
+JOIN `poster` ON `poster`.`abs_id`=`abstrak`.`abs_id`
+WHERE YEAR(`submit_date`) = \'2022\'
+AND `level` = \'user\'
+ORDER BY `abs_id` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `abstrak`.`abs_id`, `user`.`nama`, `institusi`, `email`, `phone`, `abstrak`.`judul`, `abstrak`.`penulis`, `abstrak`.`afiliasi`, `abstrak`.`abstrak`, `abstrak`.`status`, `abstrak`.`type`, `abstrak`.`keyword`, `abstrak`.`submit_date`, `abstrak`.`update_date`, `decision`, `decision_revised`, `status_poster`, `scope`
+FROM `abstrak`
+JOIN `scope` ON `scope`.`id_scope`=`abstrak`.`id_scope`
+JOIN `full_paper` ON `full_paper`.`abs_id`=`abstrak`.`abs_id`
+JOIN `revised_paper` ON `revised_paper`.`abs_id`=`abstrak`.`abs_id`
+JOIN `poster` ON `poster`.`abs_id`=`abstrak`.`abs_id`
+WHERE YEAR(`submit_date`) = \'2022\'
+AND `level` = \'user\'
+ORDER BY `abs_id` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `abstrak`.`abs_id`, `user`.`nama`, `institusi`, `email`, `phone`, `abstrak`.`judul`, `abstrak`.`penulis`, `abstrak`.`afiliasi`, `abstrak`.`abstrak`, `abstrak`.`status`, `abstrak`.`type`, `abstrak`.`keyword`, `abstrak`.`submit_date`, `abstrak`.`update_date`, `decision`, `decision_revised`, `status_poster`, `scope`
+FROM `abstrak`
+JOIN `scope` ON `scope`.`id_scope`=`abstrak`.`id_scope`
+JOIN `full_paper` ON `full_paper`.`abs_id`=`abstrak`.`abs_id`
+JOIN `revised_paper` ON `revised_paper`.`abs_id`=`abstrak`.`abs_id`
+JOIN `poster` ON `poster`.`abs_id`=`abstrak`.`abs_id`
+WHERE YEAR(`submit_date`) = :YEAR(`submit_date`):
+AND `level` = :level:
+ORDER BY `abs_id` ASC', [...], false)
+ 5 SYSTEMPATH\Model.php(771): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Admin.php(447): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->DownloadAllMetadata()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 22:31:14 --> Too few arguments to function App\Models\RevisedModel::email_revised_acc(), 0 passed in C:\xampp\htdocs\isceeradmin\app\Controllers\Admin.php on line 818 and exactly 1 expected
+in APPPATH\Models\RevisedModel.php on line 337.
+ 1 APPPATH\Controllers\Admin.php(818): App\Models\RevisedModel->email_revised_acc()
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->prosesEmail()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 22:34:22 --> Too few arguments to function App\Models\RevisedModel::email_revised_acc(), 0 passed in C:\xampp\htdocs\isceeradmin\app\Controllers\Admin.php on line 818 and exactly 1 expected
+in APPPATH\Models\RevisedModel.php on line 337.
+ 1 APPPATH\Controllers\Admin.php(818): App\Models\RevisedModel->email_revised_acc()
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->prosesEmail()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 22:38:40 --> Too few arguments to function App\Models\RevisedModel::email_revised_acc(), 0 passed in C:\xampp\htdocs\isceeradmin\app\Controllers\Admin.php on line 818 and exactly 1 expected
+in APPPATH\Models\RevisedModel.php on line 337.
+ 1 APPPATH\Controllers\Admin.php(818): App\Models\RevisedModel->email_revised_acc()
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->prosesEmail()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 22:40:06 --> Too few arguments to function App\Models\RevisedModel::revised_req(), 0 passed in C:\xampp\htdocs\isceeradmin\app\Controllers\Admin.php on line 815 and exactly 1 expected
+in APPPATH\Models\RevisedModel.php on line 346.
+ 1 APPPATH\Controllers\Admin.php(815): App\Models\RevisedModel->revised_req()
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->prosesEmail()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 22:43:09 --> Undefined variable $email_kirim
+in APPPATH\Controllers\Admin.php on line 829.
+ 1 APPPATH\Controllers\Admin.php(829): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $email_kirim', 'APPPATH\\Controllers\\Admin.php', 829)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->prosesEmail()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 22:45:25 --> Undefined variable $email_kirim
+in APPPATH\Controllers\Admin.php on line 829.
+ 1 APPPATH\Controllers\Admin.php(829): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $email_kirim', 'APPPATH\\Controllers\\Admin.php', 829)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->prosesEmail()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 22:46:36 --> Undefined variable $email_k
+in APPPATH\Controllers\Admin.php on line 829.
+ 1 APPPATH\Controllers\Admin.php(829): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $email_k', 'APPPATH\\Controllers\\Admin.php', 829)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->prosesEmail()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 22:49:39 --> Undefined variable $email_k
+in APPPATH\Controllers\Admin.php on line 829.
+ 1 APPPATH\Controllers\Admin.php(829): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $email_k', 'APPPATH\\Controllers\\Admin.php', 829)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->prosesEmail()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-10-04 22:51:23 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1408F10B:SSL routines:ssl3_get_record:wrong version number in C:\xampp\htdocs\isceeradmin\system\Email\Email.php:1850
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): SS...', 'C:\\xampp\\htdocs...', 1850)
+#1 C:\xampp\htdocs\isceeradmin\system\Email\Email.php(1850): fsockopen('ssl://smtp.gmai...', 587, NULL, NULL, 5)
+#2 C:\xampp\htdocs\isceeradmin\system\Email\Email.php(1764): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\isceeradmin\system\Email\Email.php(1654): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\isceeradmin\system\Email\Email.php(1552): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\isceeradmin\app\Controllers\Admin.php(839): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(904): App\Controllers\Admin->prosesEmail()
+#7 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\isceeradmin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\isceeradmin\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+ERROR - 2022-10-04 23:03:40 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1408F10B:SSL routines:ssl3_get_record:wrong version number in C:\xampp\htdocs\isceeradmin\system\Email\Email.php:1850
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): SS...', 'C:\\xampp\\htdocs...', 1850)
+#1 C:\xampp\htdocs\isceeradmin\system\Email\Email.php(1850): fsockopen('ssl://smtp.gmai...', 587, NULL, NULL, 5)
+#2 C:\xampp\htdocs\isceeradmin\system\Email\Email.php(1764): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\isceeradmin\system\Email\Email.php(1654): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\isceeradmin\system\Email\Email.php(1552): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\isceeradmin\app\Controllers\Admin.php(824): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(904): App\Controllers\Admin->prosesEmail()
+#7 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\isceeradmin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\isceeradmin\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-10-04 23:11:57 --> Could not move file php3F96.tmp to gambar/ ()
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 149.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(149): CodeIgniter\HTTP\Exceptions\HTTPException::forMoveFailed('php3F96.tmp', 'FCPATH\\gambar', 'ROOTPATH\\public')
+ 2 APPPATH\Controllers\Admin.php(797): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH\\gambar', 'C:\\xampp\\tmp\\php3F96.tmp')
+ 3 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->prosesEmail()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 23:14:55 --> Undefined variable $email
+in APPPATH\Controllers\Admin.php on line 821.
+ 1 APPPATH\Controllers\Admin.php(821): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $email', 'APPPATH\\Controllers\\Admin.php', 821)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->prosesEmail()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 23:17:56 --> Call to undefined method App\Models\RevisedModel::poster_req
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\Admin.php(821): CodeIgniter\Model->__call('poster_req', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->prosesEmail()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

@@ -1,0 +1,247 @@
+ERROR - 2022-09-02 03:01:16 --> mysqli_sql_exception: Unknown column 'DESC' in 'order clause' in C:\xampp\htdocs\isceeradmin\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\isceeradmin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\isceeradmin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\isceeradmin\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\isceeradmin\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\isceeradmin\system\Model.php(771): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\isceeradmin\app\Controllers\User.php(48): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(904): App\Controllers\User->tambahabstrak()
+#7 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#8 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\isceeradmin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\isceeradmin\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-09-02 03:01:16 --> Unknown column 'DESC' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `abstrak`
+ORDER BY `DESC`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `abstrak`
+ORDER BY `DESC`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `abstrak`
+ORDER BY `DESC`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `abstrak`
+ORDER BY `DESC`', [], false)
+ 5 SYSTEMPATH\Model.php(771): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\User.php(48): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\User->tambahabstrak()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-02 19:56:40 --> Undefined variable $scope
+in APPPATH\Views\user\tambahabstrak.php on line 58.
+ 1 APPPATH\Views\user\tambahabstrak.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $scope', 'APPPATH\\Views\\user\\tambahabstrak.php', 58)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\tambahabstrak.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('user/tambahabstrak', [], true)
+ 5 APPPATH\Controllers\User.php(52): view('user/tambahabstrak', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\User->tambahabstrak()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-09-02 20:01:10 --> mysqli_sql_exception: Unknown column 'DESC' in 'order clause' in C:\xampp\htdocs\isceeradmin\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\isceeradmin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\isceeradmin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\isceeradmin\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\isceeradmin\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\isceeradmin\system\Model.php(771): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\isceeradmin\app\Controllers\User.php(63): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(904): App\Controllers\User->tambah()
+#7 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#8 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\isceeradmin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\isceeradmin\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-09-02 20:01:10 --> Unknown column 'DESC' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `abstrak`
+ORDER BY `DESC`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `abstrak`
+ORDER BY `DESC`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `abstrak`
+ORDER BY `DESC`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `abstrak`
+ORDER BY `DESC`', [], false)
+ 5 SYSTEMPATH\Model.php(771): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\User.php(63): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\User->tambah()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-02 20:01:51 --> There is no primary key defined when trying to make insert.
+in SYSTEMPATH\Model.php on line 268.
+ 1 SYSTEMPATH\Model.php(268): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+ 2 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 3 SYSTEMPATH\Model.php(666): CodeIgniter\BaseModel->insert([...], false)
+ 4 SYSTEMPATH\BaseModel.php(658): CodeIgniter\Model->insert([...], false)
+ 5 APPPATH\Controllers\User.php(78): CodeIgniter\BaseModel->save([...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\User->tambah()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-09-02 20:04:10 --> mysqli_sql_exception: Column 'judul' cannot be null in C:\xampp\htdocs\isceeradmin\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\isceeradmin\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ab...', 0)
+#1 C:\xampp\htdocs\isceeradmin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ab...')
+#2 C:\xampp\htdocs\isceeradmin\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ab...')
+#3 C:\xampp\htdocs\isceeradmin\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ab...', Array, false)
+#4 C:\xampp\htdocs\isceeradmin\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\isceeradmin\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\isceeradmin\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\isceeradmin\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\isceeradmin\app\Controllers\User.php(78): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(904): App\Controllers\User->tambah()
+#10 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#11 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\isceeradmin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\isceeradmin\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2022-09-02 20:04:10 --> Column 'judul' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `abstrak` (`abs_id`, `judul`, `penulis`, `afiliasi`, `id_scope`, `abstrak`, `keyword`, `presenter`, `type`, `status`, `submit_date`, `update_date`) VALUES (\'ABS-2\', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, \'awaiting decision\', \'2022-09-02 20:04:10\', \'2022-09-02 20:04:10\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `abstrak` (`abs_id`, `judul`, `penulis`, `afiliasi`, `id_scope`, `abstrak`, `keyword`, `presenter`, `type`, `status`, `submit_date`, `update_date`) VALUES (\'ABS-2\', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, \'awaiting decision\', \'2022-09-02 20:04:10\', \'2022-09-02 20:04:10\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `abstrak` (`abs_id`, `judul`, `penulis`, `afiliasi`, `id_scope`, `abstrak`, `keyword`, `presenter`, `type`, `status`, `submit_date`, `update_date`) VALUES (\'ABS-2\', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, \'awaiting decision\', \'2022-09-02 20:04:10\', \'2022-09-02 20:04:10\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `abstrak` (`abs_id`, `judul`, `penulis`, `afiliasi`, `id_scope`, `abstrak`, `keyword`, `presenter`, `type`, `status`, `submit_date`, `update_date`) VALUES (:abs_id.1:, :judul:, :penulis:, :afiliasi:, :id_scope:, :abstrak:, :keyword:, :presenter:, :type:, :status:, :submit_date:, :update_date:)', [...], false)
+ 5 SYSTEMPATH\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(666): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(658): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\User.php(78): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\User->tambah()
+11 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+12 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-09-02 20:04:52 --> mysqli_sql_exception: Column 'judul' cannot be null in C:\xampp\htdocs\isceeradmin\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\isceeradmin\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ab...', 0)
+#1 C:\xampp\htdocs\isceeradmin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ab...')
+#2 C:\xampp\htdocs\isceeradmin\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ab...')
+#3 C:\xampp\htdocs\isceeradmin\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ab...', Array, false)
+#4 C:\xampp\htdocs\isceeradmin\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\isceeradmin\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\isceeradmin\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\isceeradmin\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\isceeradmin\app\Controllers\User.php(78): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(904): App\Controllers\User->tambah()
+#10 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#11 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\isceeradmin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\isceeradmin\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2022-09-02 20:04:52 --> Column 'judul' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `abstrak` (`abs_id`, `judul`, `penulis`, `afiliasi`, `id_scope`, `abstrak`, `keyword`, `presenter`, `type`, `status`, `submit_date`, `update_date`) VALUES (\'ABS-2\', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, \'awaiting decision\', \'2022-09-02 20:04:52\', \'2022-09-02 20:04:52\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `abstrak` (`abs_id`, `judul`, `penulis`, `afiliasi`, `id_scope`, `abstrak`, `keyword`, `presenter`, `type`, `status`, `submit_date`, `update_date`) VALUES (\'ABS-2\', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, \'awaiting decision\', \'2022-09-02 20:04:52\', \'2022-09-02 20:04:52\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `abstrak` (`abs_id`, `judul`, `penulis`, `afiliasi`, `id_scope`, `abstrak`, `keyword`, `presenter`, `type`, `status`, `submit_date`, `update_date`) VALUES (\'ABS-2\', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, \'awaiting decision\', \'2022-09-02 20:04:52\', \'2022-09-02 20:04:52\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `abstrak` (`abs_id`, `judul`, `penulis`, `afiliasi`, `id_scope`, `abstrak`, `keyword`, `presenter`, `type`, `status`, `submit_date`, `update_date`) VALUES (:abs_id.1:, :judul:, :penulis:, :afiliasi:, :id_scope:, :abstrak:, :keyword:, :presenter:, :type:, :status:, :submit_date:, :update_date:)', [...], false)
+ 5 SYSTEMPATH\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(666): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(658): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\User.php(78): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\User->tambah()
+11 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+12 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-09-02 20:05:00 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`isceer`.`abstrak`, CONSTRAINT `abstrak_ibfk_1` FOREIGN KEY (`id_user`) REFERENCES `user` (`id_user`)) in C:\xampp\htdocs\isceeradmin\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\isceeradmin\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ab...', 0)
+#1 C:\xampp\htdocs\isceeradmin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ab...')
+#2 C:\xampp\htdocs\isceeradmin\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ab...')
+#3 C:\xampp\htdocs\isceeradmin\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ab...', Array, false)
+#4 C:\xampp\htdocs\isceeradmin\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\isceeradmin\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\isceeradmin\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\isceeradmin\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\isceeradmin\app\Controllers\User.php(78): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(904): App\Controllers\User->tambah()
+#10 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#11 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\isceeradmin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\isceeradmin\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2022-09-02 20:05:00 --> Cannot add or update a child row: a foreign key constraint fails (`isceer`.`abstrak`, CONSTRAINT `abstrak_ibfk_1` FOREIGN KEY (`id_user`) REFERENCES `user` (`id_user`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `abstrak` (`abs_id`, `judul`, `penulis`, `afiliasi`, `id_scope`, `abstrak`, `keyword`, `presenter`, `type`, `status`, `submit_date`, `update_date`) VALUES (\'ABS-2\', \'SISTEM INFORMASI PENGAJUAN AKTA TANAH BERBASIS WEB PADA KECAMATAN CIBIRU asda\', \'Abi\', \'UNIKOM\', \'1\', \'sadoajdoiwdjjawndasdjsbadjkasndjasjkdnasjkdnasjkdnasjkdnasjkdnaskjndsssssssssssssssssssssssssssssskkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkasddddddddddddddddddddddddddddddddddssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssadoajdoiwdjjawndasdjsbadjkasndjasjkdnasjkdnasjkdnasjkdnasjkdnaskjndsssssssssssssssssssssssssssssskkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkasddddddddddddddddddddddddddddddddddssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssadoajdoiwdjjawndasdjsbadjkasndjasjkdnasjkdnasjkdnasjkdnasjkdnaskjndsssssssssssssssssssssssssssssskkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkasddddddddddddddddddddddddddddddddddssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssadoajdoiwdjjawndasdjsbadjkasndjasjkdnasjkdnasjkdnasjkdnasjkdnaskjndsssssssssssssssssssssssssssssskkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkasddddddddddddddddddddddddddddddddddsssssssssssssssssssssssssssssssssssssssssssssssssssssssssss\', \'Akta Tanah, Sistem Informasi Geografis, Aplikasi Pemerintahan, E-government\', \'Akta Tanah, Sistem Informasi Geografis, Aplikasi Pemerintahan, E-government\', \'oral presentation\', \'awaiting decision\', \'2022-09-02 20:05:00\', \'2022-09-02 20:05:00\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `abstrak` (`abs_id`, `judul`, `penulis`, `afiliasi`, `id_scope`, `abstrak`, `keyword`, `presenter`, `type`, `status`, `submit_date`, `update_date`) VALUES (\'ABS-2\', \'SISTEM INFORMASI PENGAJUAN AKTA TANAH BERBASIS WEB PADA KECAMATAN CIBIRU asda\', \'Abi\', \'UNIKOM\', \'1\', \'sadoajdoiwdjjawndasdjsbadjkasndjasjkdnasjkdnasjkdnasjkdnasjkdnaskjndsssssssssssssssssssssssssssssskkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkasddddddddddddddddddddddddddddddddddssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssadoajdoiwdjjawndasdjsbadjkasndjasjkdnasjkdnasjkdnasjkdnasjkdnaskjndsssssssssssssssssssssssssssssskkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkasddddddddddddddddddddddddddddddddddssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssadoajdoiwdjjawndasdjsbadjkasndjasjkdnasjkdnasjkdnasjkdnasjkdnaskjndsssssssssssssssssssssssssssssskkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkasddddddddddddddddddddddddddddddddddssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssadoajdoiwdjjawndasdjsbadjkasndjasjkdnasjkdnasjkdnasjkdnasjkdnaskjndsssssssssssssssssssssssssssssskkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkasddddddddddddddddddddddddddddddddddsssssssssssssssssssssssssssssssssssssssssssssssssssssssssss\', \'Akta Tanah, Sistem Informasi Geografis, Aplikasi Pemerintahan, E-government\', \'Akta Tanah, Sistem Informasi Geografis, Aplikasi Pemerintahan, E-government\', \'oral presentation\', \'awaiting decision\', \'2022-09-02 20:05:00\', \'2022-09-02 20:05:00\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `abstrak` (`abs_id`, `judul`, `penulis`, `afiliasi`, `id_scope`, `abstrak`, `keyword`, `presenter`, `type`, `status`, `submit_date`, `update_date`) VALUES (\'ABS-2\', \'SISTEM INFORMASI PENGAJUAN AKTA TANAH BERBASIS WEB PADA KECAMATAN CIBIRU asda\', \'Abi\', \'UNIKOM\', \'1\', \'sadoajdoiwdjjawndasdjsbadjkasndjasjkdnasjkdnasjkdnasjkdnasjkdnaskjndsssssssssssssssssssssssssssssskkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkasddddddddddddddddddddddddddddddddddssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssadoajdoiwdjjawndasdjsbadjkasndjasjkdnasjkdnasjkdnasjkdnasjkdnaskjndsssssssssssssssssssssssssssssskkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkasddddddddddddddddddddddddddddddddddssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssadoajdoiwdjjawndasdjsbadjkasndjasjkdnasjkdnasjkdnasjkdnasjkdnaskjndsssssssssssssssssssssssssssssskkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkasddddddddddddddddddddddddddddddddddssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssadoajdoiwdjjawndasdjsbadjkasndjasjkdnasjkdnasjkdnasjkdnasjkdnaskjndsssssssssssssssssssssssssssssskkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkasddddddddddddddddddddddddddddddddddsssssssssssssssssssssssssssssssssssssssssssssssssssssssssss\', \'Akta Tanah, Sistem Informasi Geografis, Aplikasi Pemerintahan, E-government\', \'Akta Tanah, Sistem Informasi Geografis, Aplikasi Pemerintahan, E-government\', \'oral presentation\', \'awaiting decision\', \'2022-09-02 20:05:00\', \'2022-09-02 20:05:00\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `abstrak` (`abs_id`, `judul`, `penulis`, `afiliasi`, `id_scope`, `abstrak`, `keyword`, `presenter`, `type`, `status`, `submit_date`, `update_date`) VALUES (:abs_id.1:, :judul:, :penulis:, :afiliasi:, :id_scope:, :abstrak:, :keyword:, :presenter:, :type:, :status:, :submit_date:, :update_date:)', [...], false)
+ 5 SYSTEMPATH\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(666): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(658): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\User.php(78): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\User->tambah()
+11 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+12 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-02 20:56:09 --> Too few arguments to function App\Controllers\User::editabstrak(), 0 passed in C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php on line 904 and exactly 1 expected
+in APPPATH\Controllers\User.php on line 90.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\User->editabstrak()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-02 20:56:48 --> Undefined variable $scope
+in APPPATH\Views\user\editabstrak.php on line 60.
+ 1 APPPATH\Views\user\editabstrak.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $scope', 'APPPATH\\Views\\user\\editabstrak.php', 60)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\editabstrak.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('user/editabstrak', [], true)
+ 5 APPPATH\Controllers\User.php(100): view('user/editabstrak', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\User->editabstrak('ABS-001')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-02 21:15:29 --> Trying to access array offset on value of type null
+in APPPATH\Views\user\editabstrak.php on line 32.
+ 1 APPPATH\Views\user\editabstrak.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\user\\editabstrak.php', 32)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\editabstrak.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('user/editabstrak', [], true)
+ 5 APPPATH\Controllers\User.php(109): view('user/editabstrak', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\User->editabstrak('10iejud89k')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-02 21:30:36 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1577.
+ 1 SYSTEMPATH\BaseModel.php(1577): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(692): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\User.php(129): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\User->edit()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-02 21:33:04 --> There is no primary key defined when trying to make insert.
+in SYSTEMPATH\Model.php on line 268.
+ 1 SYSTEMPATH\Model.php(268): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+ 2 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 3 SYSTEMPATH\Model.php(666): CodeIgniter\BaseModel->insert([...], false)
+ 4 SYSTEMPATH\BaseModel.php(658): CodeIgniter\Model->insert([...], false)
+ 5 APPPATH\Controllers\User.php(121): CodeIgniter\BaseModel->save([...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\User->edit()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

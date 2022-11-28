@@ -1,0 +1,15 @@
+CRITICAL - 2022-08-29 01:50:43 --> Class "App\Controllers\UserModel" not found
+in APPPATH\Controllers\Auth.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(866): App\Controllers\Auth->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-29 01:51:53 --> Undefined array key "email"
+in APPPATH\Controllers\Auth.php on line 26.
+ 1 APPPATH\Controllers\Auth.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "email"', 'APPPATH\\Controllers\\Auth.php', 26)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Auth->login()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

@@ -1,0 +1,215 @@
+CRITICAL - 2022-08-25 00:24:21 --> url_title(): Argument #1 ($str) must be of type string, null given, called in C:\xampp\htdocs\isceeradmin\app\Controllers\Signup.php on line 24
+in SYSTEMPATH\Helpers\url_helper.php on line 475.
+ 1 APPPATH\Controllers\Signup.php(24): url_title(null, '-', true)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Signup->register()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-25 00:28:30 --> url_title(): Argument #1 ($str) must be of type string, null given, called in C:\xampp\htdocs\isceeradmin\app\Controllers\Signup.php on line 24
+in SYSTEMPATH\Helpers\url_helper.php on line 475.
+ 1 APPPATH\Controllers\Signup.php(24): url_title(null, '-', true)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Signup->register()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-25 00:37:14 --> Undefined property: App\Controllers\Signup::$Usermodel
+in APPPATH\Controllers\Signup.php on line 25.
+ 1 APPPATH\Controllers\Signup.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Signup::$Usermodel', 'APPPATH\\Controllers\\Signup.php', 25)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Signup->register()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-25 01:00:40 --> Undefined property: App\Controllers\Signup::$Usermodel
+in APPPATH\Controllers\Signup.php on line 25.
+ 1 APPPATH\Controllers\Signup.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Signup::$Usermodel', 'APPPATH\\Controllers\\Signup.php', 25)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Signup->register()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-25 01:01:50 --> Call to undefined method App\Models\UserModel::register
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\Signup.php(31): CodeIgniter\Model->__call('register', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Signup->register()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-25 01:03:23 --> Call to undefined method App\Models\UserModel::register
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\Signup.php(31): CodeIgniter\Model->__call('register', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Signup->register()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-25 01:04:15 --> Call to undefined method App\Models\UserModel::register
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\Signup.php(31): CodeIgniter\Model->__call('register', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Signup->register()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-25 01:13:56 --> Call to undefined method App\Models\UserModel::register
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\Signup.php(31): CodeIgniter\Model->__call('register', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Signup->register()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-25 01:17:44 --> Undefined variable $builder
+in APPPATH\Models\UserModel.php on line 16.
+ 1 APPPATH\Models\UserModel.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $builder', 'APPPATH\\Models\\UserModel.php', 16)
+ 2 APPPATH\Controllers\Signup.php(31): App\Models\UserModel->register([...])
+ 3 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Signup->register()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-25 01:18:28 --> Call to undefined function App\Models\insert()
+in APPPATH\Models\UserModel.php on line 16.
+ 1 APPPATH\Controllers\Signup.php(31): App\Models\UserModel->register([...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Signup->register()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-25 01:30:13 --> Call to undefined function App\Models\insert()
+in APPPATH\Models\UserModel.php on line 16.
+ 1 APPPATH\Controllers\Signup.php(37): App\Models\UserModel->register([...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Signup->register()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-25 01:38:31 --> Call to a member function insert() on null
+in APPPATH\Models\UserModel.php on line 16.
+ 1 APPPATH\Controllers\Signup.php(37): App\Models\UserModel->register([...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Signup->register()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-25 01:40:08 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'localhost'@'localhost' (using password: NO) in C:\xampp\htdocs\isceeradmin\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\isceeradmin\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'localhost', '', 'isceer', 3306, '', 0)
+#1 C:\xampp\htdocs\isceeradmin\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\isceeradmin\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\isceeradmin\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\isceeradmin\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\isceeradmin\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\isceeradmin\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\isceeradmin\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\isceeradmin\app\Controllers\Signup.php(37): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(904): App\Controllers\Signup->register()
+#10 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+#11 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\isceeradmin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\isceeradmin\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'****' (using password: NO) in C:\xampp\htdocs\isceeradmin\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\isceeradmin\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\isceeradmin\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\isceeradmin\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#3 C:\xampp\htdocs\isceeradmin\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#4 C:\xampp\htdocs\isceeradmin\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#5 C:\xampp\htdocs\isceeradmin\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, false)
+#6 C:\xampp\htdocs\isceeradmin\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#7 C:\xampp\htdocs\isceeradmin\app\Controllers\Signup.php(37): CodeIgniter\BaseModel->save(Array)
+#8 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(904): App\Controllers\Signup->register()
+#9 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+#10 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\isceeradmin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\isceeradmin\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2022-08-25 01:40:08 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'****' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`nama`, `institusi`, `email`, `password`, `phone`, `created_at`, `updated_at`) VALUES (:nama:, :institusi:, :email:, :password:, :phone:, :created_at:, :updated_at:)', [...], false)
+ 3 SYSTEMPATH\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH\Model.php(666): CodeIgniter\BaseModel->insert([...], false)
+ 6 SYSTEMPATH\BaseModel.php(658): CodeIgniter\Model->insert([...], false)
+ 7 APPPATH\Controllers\Signup.php(37): CodeIgniter\BaseModel->save([...])
+ 8 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Signup->register()
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-25 01:44:25 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in C:\xampp\htdocs\isceeradmin\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\isceeradmin\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\isceeradmin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\isceeradmin\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\isceeradmin\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\isceeradmin\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\isceeradmin\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\isceeradmin\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\isceeradmin\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\isceeradmin\app\Controllers\Signup.php(37): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(904): App\Controllers\Signup->register()
+#10 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+#11 C:\xampp\htdocs\isceeradmin\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\isceeradmin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\isceeradmin\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2022-08-25 01:44:25 --> Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `user` (`nama`, `institusi`, `email`, `password`, `phone`, `created_at`, `updated_at`) VALUES (\'as\', \'1\', \'as\', \'aski\', \'as\', \'2022-08-25 01:44:24\', \'2022-08-25 01:44:24\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `user` (`nama`, `institusi`, `email`, `password`, `phone`, `created_at`, `updated_at`) VALUES (\'as\', \'1\', \'as\', \'aski\', \'as\', \'2022-08-25 01:44:24\', \'2022-08-25 01:44:24\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `user` (`nama`, `institusi`, `email`, `password`, `phone`, `created_at`, `updated_at`) VALUES (\'as\', \'1\', \'as\', \'aski\', \'as\', \'2022-08-25 01:44:24\', \'2022-08-25 01:44:24\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`nama`, `institusi`, `email`, `password`, `phone`, `created_at`, `updated_at`) VALUES (:nama:, :institusi:, :email:, :password:, :phone:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(666): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(658): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Signup.php(37): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Signup->register()
+11 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+12 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-25 02:28:32 --> Undefined variable $validation
+in APPPATH\Views\signup.php on line 37.
+ 1 APPPATH\Views\signup.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $validation', 'APPPATH\\Views\\signup.php', 37)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\signup.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('signup', [], true)
+ 5 APPPATH\Controllers\Signup.php(19): view('signup', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Signup->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-25 02:30:21 --> Undefined variable $validation
+in APPPATH\Views\signup.php on line 37.
+ 1 APPPATH\Views\signup.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $validation', 'APPPATH\\Views\\signup.php', 37)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\signup.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('signup', [], true)
+ 5 APPPATH\Controllers\Signup.php(19): view('signup', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Signup->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-25 03:00:51 --> Undefined variable $validation
+in APPPATH\Views\signup.php on line 37.
+ 1 APPPATH\Views\signup.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $validation', 'APPPATH\\Views\\signup.php', 37)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\signup.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('signup', [], true)
+ 5 APPPATH\Controllers\Signup.php(19): view('signup', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Signup->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
